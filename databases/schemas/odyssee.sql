@@ -176,14 +176,9 @@ CREATE TABLE IF NOT EXISTS "classes" (
     FOREIGN KEY("bible_id") REFERENCES "bibles"("id")
 );
 
-CREATE TABLE IF NOT EXISTS "identities" (
-    "id" SERIAL,
-);
 
+------------- gestion des personnages : 
 
-
-
--- agents
 CREATE TABLE IF NOT EXISTS "characters" (
     "id" SERIAL,
     "first_name" VARCHAR(64) NOT NULL DEFAULT 'anonymous',
@@ -201,6 +196,62 @@ CREATE TABLE IF NOT EXISTS "characters" (
     FOREIGN KEY("project_id") REFERENCES "projects"("id"),
     FOREIGN KEY("bible_id") REFERENCES "bibles"("id")
 ); 
+
+
+CREATE TABLE IF NOT EXISTS "identities" (
+    "character_id" INT,
+    "regeneration" "reload_mode" NOT NULL DEFAULT "Undefined",
+    "perception" "perception_mode" NOT NULL DEFAULT "Undefined",
+    "reflection" "judgment_mode" NOT NULL DEFAULT "Undefined",
+    "direction" "dominant_function" NOT NULL DEFAULT "Undefined",
+    "openness" SMALLINT CHECK("openness" BETWEEN 0 AND 5 ),
+    "consciousness" SMALLINT CHECK("consciousness" BETWEEN 0 AND 5 ),
+    "extraversion" SMALLINT CHECK("extraversion" BETWEEN 0 AND 5 ),
+    "agreability" SMALLINT CHECK("agreability" BETWEEN 0 AND 5 ),
+    "neuroticism" SMALLINT CHECK("neuroticism" BETWEEN 0 AND 5 ),
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+);
+
+
+-- combinaison des differents types de classification des profils (MBTI, dere, enneagram, etc...)
+CREATE TABLE IF NOT EXISTS "personnalities" (
+    "character_id" INT,
+    "dere_type" "dere_types" NOT NULL DEFAULT "Undefined",
+    "intelligence" "enneagram_centers" NOT NULL DEFAULT "Undefined",
+    "enne_type" "enneagram_types" NOT NULL DEFAULT "Undefined",
+    "vice" "enneagram_vices" NOT NULL DEFAULT "Undefined",
+    "virtue" "enneagram_virtue" NOT NULL DEFAULT "Undefined",
+    "fear" "enneagram_fear" NOT NULL DEFAULT "Undefined",
+    "desire" "enneagram_desire" NOT NULL DEFAULT "Undefined",
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+); 
+
+-- combinaison des differents actions et réactions
+CREATE TABLE IF NOT EXISTS "behaviors" (
+    "character_id" INT,
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+); 
+
+-- combinaisons des éléments qui composent les valeurs, motivations et principes d'un agent
+CREATE TABLE IF NOT EXISTS "beliefs" (); 
+
+-- liste des elements essentiels à la persistence/existence d'une entité
+CREATE TABLE IF NOT EXISTS "needs" (); 
+
+-- liste des elements ou situations qu'un agent veut posseder ou faire advenir
+CREATE TABLE IF NOT EXISTS "wants" (); 
+
+-- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
+CREATE TABLE IF NOT EXISTS "actions" (); 
+
+-- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
+CREATE TABLE IF NOT EXISTS "means" (); 
+
+-- combinaison des différentes caracteristiques genotypique, phenotypique et biographique
+CREATE TABLE IF NOT EXISTS "appearance" (); 
+
+
+
 
 
 -- needs, goods, actants, etc. 
@@ -236,21 +287,6 @@ CREATE TABLE IF NOT EXISTS "quests" (); -- objectif que veut ou doit atteindre u
 CREATE TABLE IF NOT EXISTS "stories" (); -- recit composé des états et situations des ETANTS entre deux EVENTS ; il est stucturé selon une logique narrative
 
 
-------------- gestion des personnages : 
-
-CREATE TABLE IF NOT EXISTS "appearance" (); -- combinaison des différentes caracteristiques genotypique, phenotypique et biographique
-
-CREATE TABLE IF NOT EXISTS "personnalities" (); -- combinaison des differents types de classification des profils (MBTI, dere, enneagram, etc...)
-
-CREATE TABLE IF NOT EXISTS "beliefs" (); -- combinaisons des éléments qui composent les valeurs, motivations et principes d'un agent
-
-CREATE TABLE IF NOT EXISTS "needs" (); -- liste des elements essentiels à la persistence/existence d'une entité
-
-CREATE TABLE IF NOT EXISTS "wants" (); -- liste des elements ou situations qu'un agent veut posseder ou faire advenir
-
-CREATE TABLE IF NOT EXISTS "actions" (); -- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
-
-CREATE TABLE IF NOT EXISTS "means" (); -- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
 
 
 
