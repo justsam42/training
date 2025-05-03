@@ -135,16 +135,24 @@ CREATE TYPE "clarity_types" AS ENUM('Pure Clarity', 'Clarity & Drive', 'Clarity 
 
 
 -- state choices related to NEEDS
-CREATE TYPE "need_nature" AS ENUM('Essential', 'Peculiar', 'Unusual','Casual', 'Other', 'Unknown' 'Undefined');
+CREATE TYPE "need_nature" AS ENUM('Essential', 'Vital', 'Peculiar', 'Unusual','Casual', 'Other', 'Unknown' 'Undefined');
 CREATE TYPE "need_type" AS ENUM('Possession', 'State', 'Other', 'Unknown','Undefined');
-CREATE TYPE "need_class" AS ENUM('Physical', 'Social','Other', 'Unknown','Undefined');
+CREATE TYPE "need_class" AS ENUM('Physical', 'Social', 'Mental', 'Other', 'Unknown','Undefined');
 -- might be a user defined values list cf psql doc
 
 
 -- state choices related to WANTS
-CREATE TYPE "want_nature" AS ENUM('Essential', 'Peculiar', 'Unusual','Casual', 'Other', 'Unknown' 'Undefined');
-CREATE TYPE "want_type" AS ENUM('Possession', 'State', 'Other', 'Unknown','Undefined');
-CREATE TYPE "want_class" AS ENUM('Passional', 'Ethical', 'Vain', 'Other', 'Unknown','Undefined');
+CREATE TYPE "want_nature" AS ENUM('Materialist', 'Physical', 'Psychological','Intellectual', 'Other', 'Unknown' 'Undefined');
+CREATE TYPE "want_type" AS ENUM('Commun', 'Global', 'Individual', 'Local', 'Other', 'Unknown','Undefined');
+--CREATE TYPE "want_class" AS ENUM('Passional', 'Ethical', 'Vain', 'Other', 'Unknown','Undefined');
+
+
+-- state choices related to MEANS
+CREATE TYPE "means_nature" AS ENUM('being', 'material', 'untangible', 'unknown','undefined');
+CREATE TYPE "means_type" AS ENUM('tools', 'energy','matter','knowledge', 'timelap', 'undefined');
+CREATE TYPE "means_class" AS ENUM('free', 'goods', 'shared', 'situation', 'unknown', 'undefined');
+
+CREATE TYPE "means_sustainability" AS ENUM('sustainable', 'unsustainable', 'illimited', 'immeasurable', 'unknown', 'undefined');
 
 
 
@@ -153,11 +161,11 @@ CREATE TYPE "want_class" AS ENUM('Passional', 'Ethical', 'Vain', 'Other', 'Unkno
 
 
 
-
-
-
-
-
+-- state choices related to questS
+CREATE TYPE "quest_nature" AS ENUM('vital', 'individual', 'global', 'ideal', 'undefined');
+CREATE TYPE "quest_origin" AS ENUM('internal', 'external', 'undefined');
+CREATE TYPE "quest_type" AS ENUM('undefined');
+CREATE TYPE "quest_class" AS ENUM('undefined');
 
 
 
@@ -191,21 +199,13 @@ CREATE TYPE "proofs" AS ENUM('to find', 'literature review', 'primary data', 'se
 
 
 
--- state choices related to GOALS
-CREATE TYPE "goal_nature" AS ENUM('vital', 'individual', 'global', 'ideal', 'undefined');
-CREATE TYPE "goal_origin" AS ENUM('internal', 'external', 'undefined');
-CREATE TYPE "goal_type" AS ENUM('undefined');
-CREATE TYPE "goal_class" AS ENUM('undefined');
+-- state choices related to questS
+CREATE TYPE "quest_nature" AS ENUM('vital', 'individual', 'global', 'ideal', 'undefined');
+CREATE TYPE "quest_origin" AS ENUM('internal', 'external', 'undefined');
+CREATE TYPE "quest_type" AS ENUM('undefined');
+CREATE TYPE "quest_class" AS ENUM('undefined');
 -- might be a user defined values list cf psql doc
 
-
--- state choices related to MEANS
-
-CREATE TYPE "means_nature" AS ENUM('being', 'material', 'untangible', 'unknown','undefined');
-CREATE TYPE "means_type" AS ENUM('tools', 'energy','matter','knowledge', 'timelap', 'undefined');
-CREATE TYPE "means_class" AS ENUM('free', 'goods', 'shared', 'situation', 'unknown', 'undefined');
-
-CREATE TYPE "means_sustainability" AS ENUM('sustainable', 'unsustainable', 'illimited', 'immeasurable', 'unknown', 'undefined');
 
 
 -- might be a user defined values list cf psql doc

@@ -264,7 +264,8 @@ CREATE TABLE IF NOT EXISTS "appearance" ();
 
 
 
-
+-- Needs satisfait la partie "functionnings" de l'être = 
+-- ce qui lui est neceesaire pour exister voire perduret dans un état d'être "ideal" 
 CREATE TABLE IF NOT EXISTS "needs" (
     "id" SERIAL,
     "name" VARCHAR(64) NOT NULL UNIQUE,
@@ -272,8 +273,92 @@ CREATE TABLE IF NOT EXISTS "needs" (
     "type" "need_type" NOT NULL DEFAULT 'Undefined',
     "class" "need_class" NOT NULL DEFAULT 'Undefined',
     "description" VARCHAR(1024) NOT NULL,
+    "work_cost" INT NOT NULL ,  -- effort pour satisfaire besoins
+    "benefits" INT NOT NULL , -- 
+    "carency_impact" INT NOT NULL, 
     PRIMARY KEY("id")
 ); 
+-- benefits = apport pour une fonction de l'être  
+-- (bonus sur function correspondant à cette classe ou autre de need)
+-- impact du manque = effect nég sur des aptitudes ou foinctions de d'être dependant de ce need
+
+
+CREATE TABLE IF NOT EXISTS "functionnings" (
+    "character_id" INT,
+    "need_id" INT,
+    "satisfied" BOOLEAN DEFAULT 'no',
+    --"accessibility" SUM,
+    FOREIGN KEY("character_id") REFERENCES "characters"("id"),
+    FOREIGN KEY("need_id") REFERENCES "needs"("id")
+
+);
+
+-- liste des elements ou situations qu'un agent veut posseder ou faire advenir
+-- Want satisfait la partie "idealiste"/"developpement"/"exploration"/"expansion" de l'être = 
+-- ce qqu'il pense aider à faire advenir ce qu'il pense être "ideal" de lui-même, 
+-- de son bien-être ou d'une situation. Le concept même du désir repose sur l'avidité (forme viciée)
+-- et l'expansion et connaissance de l'être de son environnement ou croissance (forece vertueuse ? )
+CREATE TABLE IF NOT EXISTS "wants" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL UNIQUE,
+    "nature" "want_nature" NOT NULL DEFAULT 'Undefined',
+    "type" "want_type" NOT NULL DEFAULT 'Undefined',
+    --"class" "want_class" NOT NULL DEFAULT 'Undefined',
+    "description" VARCHAR(1024) NOT NULL, 
+    "benefits" INT NOT NULL , -- apport pour le desire de l'être
+    "absence_impact" INT NOT NULL, -- impact du manque
+    PRIMARY KEY("id")
+); 
+-- work_cost = effort pour satisfaire want qui aurait impact sur personnalities
+-- benefits = apport pour une fonction psycho de l'être ex: ennegream vice/vertue
+-- (bonus sur function secondaire correspondant à cette classe ou autre du personnage)
+-- impact du manque = effect nég sur la peur dans enneagram
+
+
+-- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
+CREATE TABLE IF NOT EXISTS "means" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL UNIQUE,
+    "nature" "means_nature" NOT NULL DEFAULT 'Undefined',
+    "type" "means_type" NOT NULL DEFAULT 'Undefined',
+    "class" "means_class" NOT NULL DEFAULT 'Undefined',
+    "description" VARCHAR(1024) NOT NULL,
+    "work_cost" INT NOT NULL ,
+    "benefits" INT NOT NULL , -- 
+    "carency_impact" INT NOT NULL, 
+    PRIMARY KEY("id")
+); 
+
+
+
+
+-- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
+CREATE TABLE IF NOT EXISTS "actions" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL DEFAULT 'unknown action',
+    PRIMARY KEY("id")
+);
+
+
+-- objectif que veut ou doit atteindre un agent
+CREATE TABLE IF NOT EXISTS "quests" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL DEFAULT 'unnamed quest',
+    "nature" "quest_nature" NOT NULL DEFAULT 'undefined',
+    "origin" "quest_origin" NOT NULL DEFAULT 'undefined',
+    "type" "quest_type" NOT NULL DEFAULT 'undefined',
+    "class" "quest_class" NOT NULL DEFAULT 'undefined',
+    "description" VARCHAR(1000) NOT NULL,
+    "nature" "want_bonus_nature" NOT NULL DEFAULT 'Undefined',
+    "type" "want_bonus_type" NOT NULL DEFAULT 'Undefined',
+    "class" "want_bonus_class" NOT NULL DEFAULT 'Undefined',
+    "description" VARCHAR(1024) NOT NULL,
+    "attention_cost" SMALLINT NOT NULL DEFAULT 0 CHECK("attention_cost" BETWEEN 0 AND 100) ,  -- place de ce desir dans la vie
+    "life_impact" "want_malus_types" NOT NULL , -- apport pour une fonction de l'être
+    "accessibility" SMALLINT NOT NULL DEFAULT 0 CHECK("attention_cost" BETWEEN 0 AND 100) , --distance entre situation A
+    PRIMARY KEY("id")
+); 
+
 
 -- combinaisons des éléments qui composent les valeurs, motivations et principes d'un agent
 
@@ -289,39 +374,7 @@ CREATE TABLE IF NOT EXISTS "beliefs" (
 ); 
 
 
--- liste des elements ou situations qu'un agent veut posseder ou faire advenir
-CREATE TABLE IF NOT EXISTS "wants" (
 
-); 
-
-
-
--- objectif que veut ou doit atteindre un agent
-CREATE TABLE IF NOT EXISTS "quests" (
-    "id" SERIAL,
-    "name" VARCHAR(64) NOT NULL DEFAULT 'unnamed goal',
-    "nature" "goal_nature" NOT NULL DEFAULT 'undefined',
-    "origin" "goal_origin" NOT NULL DEFAULT 'undefined',
-    "type" "goal_type" NOT NULL DEFAULT 'undefined',
-    "class" "goal_class" NOT NULL DEFAULT 'undefined',
-    "description" VARCHAR(1000) NOT NULL,
-    PRIMARY KEY("id")
-); 
-
-
-
--- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
-CREATE TABLE IF NOT EXISTS "means" (); 
-
-
-
-
--- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
-CREATE TABLE IF NOT EXISTS "actions" (
-    "id" SERIAL,
-    "name" VARCHAR(64) NOT NULL DEFAULT 'unknown action',
-    PRIMARY KEY("id")
-);
 
 
 -- combinaison des differents actions et réactions
