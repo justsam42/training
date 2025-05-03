@@ -155,8 +155,6 @@ CREATE TABLE IF NOT EXISTS "events" (
 );
 
 
-
--- Tables relatives aux characters 
 CREATE TABLE IF NOT EXISTS "classes" (
     "id" SERIAL, 
     "name" VARCHAR(128) NOT NULL,
@@ -170,14 +168,9 @@ CREATE TABLE IF NOT EXISTS "classes" (
     "bible_id" INT,
     "entry_date" DATE,
     PRIMARY KEY("id"),
-    FOREIGN KEY("owner_id") REFERENCES "characters"("id"),
-    FOREIGN KEY("current_possessor_id") REFERENCES "characters"("id"),
     FOREIGN KEY("project_id") REFERENCES "projects"("id"),
     FOREIGN KEY("bible_id") REFERENCES "bibles"("id")
 );
-
-
-------------- gestion des personnages : 
 
 CREATE TABLE IF NOT EXISTS "characters" (
     "id" SERIAL,
@@ -198,63 +191,7 @@ CREATE TABLE IF NOT EXISTS "characters" (
 ); 
 
 
-CREATE TABLE IF NOT EXISTS "identities" (
-    "character_id" INT,
-    "regeneration" "reload_mode" NOT NULL DEFAULT "Undefined",
-    "perception" "perception_mode" NOT NULL DEFAULT "Undefined",
-    "reflection" "judgment_mode" NOT NULL DEFAULT "Undefined",
-    "direction" "dominant_function" NOT NULL DEFAULT "Undefined",
-    "openness" SMALLINT CHECK("openness" BETWEEN 0 AND 5 ),
-    "consciousness" SMALLINT CHECK("consciousness" BETWEEN 0 AND 5 ),
-    "extraversion" SMALLINT CHECK("extraversion" BETWEEN 0 AND 5 ),
-    "agreability" SMALLINT CHECK("agreability" BETWEEN 0 AND 5 ),
-    "neuroticism" SMALLINT CHECK("neuroticism" BETWEEN 0 AND 5 ),
-    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
-);
-
-
--- combinaison des differents types de classification des profils (MBTI, dere, enneagram, etc...)
-CREATE TABLE IF NOT EXISTS "personnalities" (
-    "character_id" INT,
-    "dere_type" "dere_types" NOT NULL DEFAULT "Undefined",
-    "intelligence" "enneagram_centers" NOT NULL DEFAULT "Undefined",
-    "enne_type" "enneagram_types" NOT NULL DEFAULT "Undefined",
-    "vice" "enneagram_vices" NOT NULL DEFAULT "Undefined",
-    "virtue" "enneagram_virtue" NOT NULL DEFAULT "Undefined",
-    "fear" "enneagram_fear" NOT NULL DEFAULT "Undefined",
-    "desire" "enneagram_desire" NOT NULL DEFAULT "Undefined",
-    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
-); 
-
--- combinaison des differents actions et réactions
-CREATE TABLE IF NOT EXISTS "behaviors" (
-    "character_id" INT,
-    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
-); 
-
--- combinaisons des éléments qui composent les valeurs, motivations et principes d'un agent
-CREATE TABLE IF NOT EXISTS "beliefs" (); 
-
--- liste des elements essentiels à la persistence/existence d'une entité
-CREATE TABLE IF NOT EXISTS "needs" (); 
-
--- liste des elements ou situations qu'un agent veut posseder ou faire advenir
-CREATE TABLE IF NOT EXISTS "wants" (); 
-
--- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
-CREATE TABLE IF NOT EXISTS "actions" (); 
-
--- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
-CREATE TABLE IF NOT EXISTS "means" (); 
-
--- combinaison des différentes caracteristiques genotypique, phenotypique et biographique
-CREATE TABLE IF NOT EXISTS "appearance" (); 
-
-
-
-
-
--- needs, goods, actants, etc. 
+-- resources, goods, actants, etc. 
 CREATE TABLE IF NOT EXISTS "items" (
     "id" SERIAL, 
     "name" VARCHAR(128) NOT NULL,
@@ -277,12 +214,143 @@ CREATE TABLE IF NOT EXISTS "items" (
 ); 
 
 
--- trajectoires des agents
-CREATE TABLE IF NOT EXISTS "journeys" (
+
+
+------------- gestion des personnages : 
+
+CREATE TABLE IF NOT EXISTS "identities" (
+    "character_id" INT,
+    "regeneration" "reload_mode" NOT NULL DEFAULT "Undefined",
+    "perception" "perception_mode" NOT NULL DEFAULT "Undefined",
+    "reflection" "judgment_mode" NOT NULL DEFAULT "Undefined",
+    "direction" "dominant_function" NOT NULL DEFAULT "Undefined",
+    "openness" SMALLINT CHECK("openness" BETWEEN 0 AND 5 ),
+    "consciousness" SMALLINT CHECK("consciousness" BETWEEN 0 AND 5 ),
+    "extraversion" SMALLINT CHECK("extraversion" BETWEEN 0 AND 5 ),
+    "agreability" SMALLINT CHECK("agreability" BETWEEN 0 AND 5 ),
+    "neuroticism" SMALLINT CHECK("neuroticism" BETWEEN 0 AND 5 ),
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+);
+
+CREATE TABLE IF NOT EXISTS "experiences" (
+    "event_id" INT,
+    "character_id" INT,
+    "reception" SMALLINT NOT NULL DEFAULT 0 CHECK("reception" BETWEEN -5 AND 5),
+    "impact" SMALLINT NOT NULL DEFAULT 0 CHECK("impact" BETWEEN 0 AND 10), -- a quel point il a influencé le character
+    "memory_accuracy" SMALLINT NOT NULL DEFAULT 0 CHECK("memory_accuracy" BETWEEN 0 AND 100), -- à quel point souvenir diffère de l'event
+    "memory_quality" SMALLINT NOT NULL DEFAULT 0 CHECK("memory_quality" BETWEEN 0 AND 100), 
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id"),
+    FOREIGN KEY ("event_id") REFERENCES "events"("id")
+);  
+
+
+
+-- combinaison des differents types de classification des profils (MBTI, dere, enneagram, etc...)
+CREATE TABLE IF NOT EXISTS "personnalities" (
+    "character_id" INT,
+    "intelligence" "enneagram_centers" NOT NULL DEFAULT "Undefined",
+    "enne_type" "enneagram_types" NOT NULL DEFAULT "Undefined",
+    "vice" "enneagram_vices" NOT NULL DEFAULT "Undefined",
+    "virtue" "enneagram_virtue" NOT NULL DEFAULT "Undefined",
+    "fear" "enneagram_fear" NOT NULL DEFAULT "Undefined",
+    "desire" "enneagram_desire" NOT NULL DEFAULT "Undefined",
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+); 
+
+
+-- combinaison des différentes caracteristiques genotypique, phenotypique et biographique
+CREATE TABLE IF NOT EXISTS "appearance" (); 
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS "needs" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL UNIQUE,
+    "nature" "need_nature" NOT NULL DEFAULT 'Undefined',
+    "type" "need_type" NOT NULL DEFAULT 'Undefined',
+    "class" "need_class" NOT NULL DEFAULT 'Undefined',
+    "description" VARCHAR(1024) NOT NULL,
+    PRIMARY KEY("id")
+); 
+
+-- combinaisons des éléments qui composent les valeurs, motivations et principes d'un agent
+
+
+CREATE TABLE IF NOT EXISTS "beliefs" (
+    "character_id" INT,
+    "event_id" INT,
+    "truth" BOOLEAN DEFAULT 1, 
+    "root" INT,
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id"),
+    FOREIGN KEY ("event_id") REFERENCES "events"("id"),
+    FOREIGN KEY ("root") REFERENCES "experiences"("id")
+); 
+
+
+-- liste des elements ou situations qu'un agent veut posseder ou faire advenir
+CREATE TABLE IF NOT EXISTS "wants" (
 
 ); 
 
-CREATE TABLE IF NOT EXISTS "quests" (); -- objectif que veut ou doit atteindre un agent
+
+
+-- objectif que veut ou doit atteindre un agent
+CREATE TABLE IF NOT EXISTS "quests" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL DEFAULT 'unnamed goal',
+    "nature" "goal_nature" NOT NULL DEFAULT 'undefined',
+    "origin" "goal_origin" NOT NULL DEFAULT 'undefined',
+    "type" "goal_type" NOT NULL DEFAULT 'undefined',
+    "class" "goal_class" NOT NULL DEFAULT 'undefined',
+    "description" VARCHAR(1000) NOT NULL,
+    PRIMARY KEY("id")
+); 
+
+
+
+-- liste des ressources mobilisables ou actionnables ou utilisables pour réaliser une action, atteindre un objectifs ou satisfaire un besoin/desir
+CREATE TABLE IF NOT EXISTS "means" (); 
+
+
+
+
+-- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
+CREATE TABLE IF NOT EXISTS "actions" (
+    "id" SERIAL,
+    "name" VARCHAR(64) NOT NULL DEFAULT 'unknown action',
+    PRIMARY KEY("id")
+);
+
+
+-- combinaison des differents actions et réactions
+CREATE TABLE IF NOT EXISTS "behaviors" (
+    "character_id" INT,
+    "drive" "drive_types" NOT NULL DEFAULT "Undefined",
+    "influence" "influence_types" NOT NULL DEFAULT "Undefined",
+    "support" "support_types" NOT NULL DEFAULT "Undefined",
+    "clarity" "drive_types" NOT NULL DEFAULT "Undefined",
+    --"action_id" INT,
+    --"means_id" INT
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+); 
+
+
+-- trajectoires des agents
+CREATE TABLE IF NOT EXISTS "journeys" (
+    "character_id" INT,
+    "quest_id" INT,
+    "event_id" INT,
+    --"action_id" INT,
+    --"means_id" INT,
+    FOREIGN KEY ("character_id") REFERENCES "characters"("id")
+    FOREIGN KEY("quest_id") REFERENCES "quests"("id"),
+    FOREIGN KEY ("event_id") REFERENCES "events"("id")
+    --FOREIGN KEY("action_id") REFERENCES "actions"("id")
+);
+
+
 
 CREATE TABLE IF NOT EXISTS "stories" (); -- recit composé des états et situations des ETANTS entre deux EVENTS ; il est stucturé selon une logique narrative
 

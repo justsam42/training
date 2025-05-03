@@ -133,6 +133,37 @@ CREATE TYPE "influence_types" AS ENUM('Pure Influence', 'Influence & Drive', 'In
 CREATE TYPE "support_types" AS ENUM('Pure Support', 'Support & Clarity', 'Support & Influence','Unknown','Undefined');
 CREATE TYPE "clarity_types" AS ENUM('Pure Clarity', 'Clarity & Drive', 'Clarity & Support','Unknown','Undefined');
 
+
+-- state choices related to NEEDS
+CREATE TYPE "need_nature" AS ENUM('Essential', 'Peculiar', 'Unusual','Casual', 'Other', 'Unknown' 'Undefined');
+CREATE TYPE "need_type" AS ENUM('Possession', 'State', 'Other', 'Unknown','Undefined');
+CREATE TYPE "need_class" AS ENUM('Physical', 'Social','Other', 'Unknown','Undefined');
+-- might be a user defined values list cf psql doc
+
+
+-- state choices related to WANTS
+CREATE TYPE "want_nature" AS ENUM('Essential', 'Peculiar', 'Unusual','Casual', 'Other', 'Unknown' 'Undefined');
+CREATE TYPE "want_type" AS ENUM('Possession', 'State', 'Other', 'Unknown','Undefined');
+CREATE TYPE "want_class" AS ENUM('Passional', 'Ethical', 'Vain', 'Other', 'Unknown','Undefined');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --------- Items
 
 CREATE TYPE "item_nature" AS ENUM('Untangible', 'Material', 'Other', 'Unknown','Undefined');
@@ -157,11 +188,7 @@ CREATE TYPE "proofs" AS ENUM('to find', 'literature review', 'primary data', 'se
 -- might be a user defined values list cf psql doc
 
 
--- state choices related to NEEDS
-CREATE TYPE "need_nature" AS ENUM('essential', 'individual', 'casual', 'undefined');
-CREATE TYPE "need_type" AS ENUM('possession', 'state', 'undefined');
-CREATE TYPE "need_class" AS ENUM('biological', 'social','undefined');
--- might be a user defined values list cf psql doc
+
 
 
 -- state choices related to GOALS
