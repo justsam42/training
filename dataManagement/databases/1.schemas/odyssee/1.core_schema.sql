@@ -31,9 +31,11 @@ CREATE TABLE IF NOT EXISTS "objects" (
 
 --- relation entre deux objets
 CREATE TABLE IF NOT EXISTS "objects_relations"(
-    "referenced_id", 
-    "referee_id",
+    "reference_object_id" INT, 
+    "related_object_id" INT,
     "relationship" "objects_relationship" NOT NULL DEFAULT "Undefined",
+    FOREIGN KEY ("reference_object_id") REFERENCES "objects"("id"), 
+    FOREIGN KEY ("related_object_id") REFERENCES "objects"("id")
 );
 
 
