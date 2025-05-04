@@ -8,6 +8,29 @@
 CREATE TYPE "app_names" AS ENUM('odyssee', 'undefined');
 
 
+CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Actionable', 'Display','Other','Unknown', 'Undefined');
+CREATE TYPE "object_types" AS ENUM('Route', 'Page', 'View', 'Section','Component','Style', 'Data','Undefined' 'Unknown');
+CREATE TYPE "object_classes" AS ENUM('Media', 'Text', 'Button', 'Effect','Unknown', 'Undefined');
+CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children', 'Trigger', 'Target')
+
+
+CREATE TYPE "function_natures" AS ENUM('Interface-related', 'User-related', 'Features-related', 'Content-related', 'Other', 'Undefined' 'Unknown');
+CREATE TYPE "function_types" AS ENUM('SideEffect', 'Styling', 'Displaying', 'Transforming', 'Data mangagement','Unknown', 'Undefined');
+CREATE TYPE "function_scopes" AS ENUM('Global', 'Local', 'Individual', 'Other','Unknown', 'Undefined');
+
+CREATE TYPE "requirement_natures" AS ENUM('Undefined' 'Unknown');
+CREATE TYPE "requirement_types" AS ENUM('Undefined' 'Unknown');
+
+
+
+
+
+
+
+
+
+
+
 ---------- liste des types liés aux features de l'APP
 
 ----- Projets
@@ -155,6 +178,10 @@ CREATE TYPE "means_class" AS ENUM('free', 'goods', 'shared', 'situation', 'unkno
 CREATE TYPE "means_sustainability" AS ENUM('sustainable', 'unsustainable', 'illimited', 'immeasurable', 'unknown', 'undefined');
 
 
+CREATE TYPE "actions_nature" AS ENUM('Intentionnal', 'Non-intentionnal', 'Other' 'Undefined' 'Unknown');
+CREATE TYPE "actions_origin" AS ENUM('Natural', 'Agent', 'Situation','Unknown', 'Undefined');
+CREATE TYPE "actions_scope" AS ENUM('Global', 'Local', 'Individual', 'Other','Unknown', 'Undefined');
+-- https://encyclo-philo.fr/action-a
 
 
 

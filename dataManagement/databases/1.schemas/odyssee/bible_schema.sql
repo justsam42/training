@@ -1,125 +1,6 @@
--- liste des entités liées à la structure informatique de l'APP
-
-CREATE TABLE IF NOT EXISTS "routes" (
-    "id" SERIAL,
-    "name" VARCHAR(64) NOT NULL,
-    "app" "app_names" NOT NULL DEFAULT 'Undefined',
-    -- "style_id" INT,
-    PRIMARY KEY("id")
-    -- FOREIGN KEY ("style_id") REFERENCES "styles"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "pages" (
-    "id" SERIAL,
-    "name" VARCHAR(64) NOT NULL,
-    "app" "app_names" NOT NULL DEFAULT 'Undefined',
-    "route_id" INT,
-    -- "style_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY ("route_id") REFERENCES "routes"("id")
-    -- FOREIGN KEY ("style_id") REFERENCES "styles"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "views" (
-    "id" SERIAL,
-    "name" VARCHAR(64) NOT NULL,
-    "app" "app_names" NOT NULL DEFAULT 'Undefined',
-    "route_id" INT,
-    "page_id" INT,
-    -- "style_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY ("route_id") REFERENCES "routes"("id"),
-    FOREIGN KEY ("page_id") REFERENCES "pages"("id")
-    -- FOREIGN KEY ("style_id") REFERENCES "styles"("id")
-);
 
 
--- liste des entités liées aux features de l'APP
-
-------------- gestion de projet : 
-
-CREATE TABLE IF NOT EXISTS "users" (
-    "id" SERIAL,
-    "username" VARCHAR(64) NOT NULL UNIQUE,
-    "password" VARCHAR(128) NOT NULL,
-    "email" VARCHAR(128) NOT NULL UNIQUE,
-    "birth_date" DATE,
-    -- "image" MEDIA, 
-    PRIMARY KEY("id")
-);
-
-CREATE TABLE IF NOT EXISTS "projects" (
-    "id" SERIAL, 
-    "name" VARCHAR(128) NOT NULL,
-    "nature" "project_nature" NOT NULL DEFAULT "Undefined",
-    "type" "project_type" NOT NULL DEFAULT "Undefined",
-    "status" "project_status" NOT NULL DEFAULT "Undefined",
-    -- "image" MEDIA,
-    "creation_date" DATE,
-    "owner_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY("owner_id") REFERENCES "users"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "tasks" (
-    "id" SERIAL, 
-    "name" VARCHAR(128) NOT NULL,
-    "nature" "task_nature" NOT NULL DEFAULT "Undefined",
-    "type" "task_type" NOT NULL DEFAULT "Standard",
-    "status" "task_status" NOT NULL DEFAULT "Undefined",
-    "creation_date" DATE,
-    "start_date" DATE,
-    "start_time" TIME,
-    "end_date" DATE,
-    "end_time" TIME,
-    "description" VARCHAR(1024) NOT NULL,
-    "user_id" INT,
-    "project_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY("user_id") REFERENCES "users"("id"),
-    FOREIGN KEY("project_id") REFERENCES "projects"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "medias" (
-    "id" SERIAL, 
-    "name" VARCHAR(128) NOT NULL,
-    "nature" "media_nature" NOT NULL DEFAULT "Undefined",
-    --"type" "media_type" NOT NULL DEFAULT "Undefined", format du media (mp3, txt, ...)
-    "import_date" DATE,
-    "description" VARCHAR(1024),
-    "owner_id" INT,
-    "project_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY("owner_id") REFERENCES "users"("id"),
-    FOREIGN KEY("project_id") REFERENCES "projects"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "bibles" (
-    "id" SERIAL, 
-    "name" VARCHAR(128) NOT NULL,
-    "project_id" INT,
-    "creation_date" DATE,
-    "description" VARCHAR(1024),
-    "owner_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY("owner_id") REFERENCES "users"("id"),
-    FOREIGN KEY("project_id") REFERENCES "projects"("id")
-);
-
-CREATE TABLE IF NOT EXISTS "ideas" (
-    "id" SERIAL, 
-    "name" VARCHAR(128) NOT NULL,
-    "nature" "idea_nature" NOT NULL DEFAULT "Undefined",
-    "type" "idea_type" NOT NULL DEFAULT "Random",
-    "status" "idea_status" NOT NULL DEFAULT "Raw",
-    "project_id" INT,
-    "description" VARCHAR(1024) NOT NULL,
-    "creation_date" DATE,
-    "owner_id" INT,
-    PRIMARY KEY("id"),
-    FOREIGN KEY("owner_id") REFERENCES "users"("id")
-);
-
+-- ce seront les models à retro-create dans Django back App : Bible
 
 ------------- contenu des bibles : 
 
@@ -330,12 +211,18 @@ CREATE TABLE IF NOT EXISTS "means" (
 ); 
 
 
-
-
 -- liste des events qu'un agent peut ou veut ou doit mettre en actes. 
 CREATE TABLE IF NOT EXISTS "actions" (
     "id" SERIAL,
     "name" VARCHAR(64) NOT NULL DEFAULT 'unknown action',
+    "nature" "action_nature" NOT NULL DEFAULT "Undefined",
+    "cause" "action_origin" NOT NULL DEFAULT "Undefined",
+    "type" "action_type" NOT NULL DEFAULT "Undefined",
+    "description" VARCHAR(256) NOT NULL,
+    "trigger_id" INT, 
+    "target_id" INT,
+    "message" VARCHAR(128),
+    
     PRIMARY KEY("id")
 );
 
@@ -388,6 +275,7 @@ CREATE TABLE IF NOT EXISTS "behaviors" (
     --"means_id" INT
     FOREIGN KEY ("character_id") REFERENCES "characters"("id")
 ); 
+
 
 
 -- trajectoires des agents
