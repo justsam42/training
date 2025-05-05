@@ -1,0 +1,28 @@
+[
+    {
+        "name" : "username-input",
+        "label" : "Username",
+        "type" : "text", 
+        "placeholder" : ""
+    },
+    {
+        "name" : "password-input",
+        "label" : "Password",
+        "type" : "text", 
+        "placeholder" : ""
+    },
+    {
+        "name" : "url-input",
+        "label" : "Sharecode",
+        "type" : "text",
+        "destination" : "/projets",
+        "placeholder" : ""
+    },
+    {
+        "name" : "research-input",
+        "label" : "Rechercher",
+        "type" : "text",
+        "destination" : "/projets",
+        "placeholder" : ""
+    }
+]

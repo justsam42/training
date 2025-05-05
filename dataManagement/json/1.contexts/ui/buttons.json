@@ -1,0 +1,97 @@
+[
+    {
+        "name" : "batir-Btn",
+        "destination" : "/login",
+        "type" : "image",
+        "label" : "Bâtir",
+        "image" : "/src/assets/icons/atlas_icon.png"
+    },
+    {
+        "name" : "xplore-Btn",
+        "destination" : "/projets",
+        "label" : "Explorer",
+        "type" : "image",
+        "image" : "/src/assets/icons/exploration_icon.png"
+    },
+    {
+        "name" : "persos",
+        "destination" : "/username/bibles/personnages", 
+        "type" : "image",
+        "label" : "Personnages", 
+        "image" : "/src/assets/icons/hero_icon.png"
+    },
+    {
+        "name" : "lieux",
+        "destination" : "/username/bibles/lieux", 
+        "type" : "image",
+        "label" : "Lieux", 
+        "image" : "/src/assets/icons/location_icon.png"
+    },
+    {
+        "name" : "events",
+        "destination" : "/username/bibles/histoires", 
+        "type" : "image",
+        "label" : "Chronologie", 
+        "image" : "/src/assets/icons/story_icon.png"
+    },
+    {
+        "name" : "items",
+        "destination" : "/username/bibles/objets", 
+        "type" : "image",
+        "label" : "Items", 
+        "image" : "/src/assets/icons/item_icon.png"
+        
+    },
+    {
+        "name" : "quetes",
+        "destination" : "/username/bibles/quetes", 
+        "type" : "image",
+        "label" : "Quetes", 
+        "image" : "/src/assets/icons/battle_icon.png"
+        
+    },
+    {
+        "name" : "voyage",
+        "destination" : "/username/bibles/voyages", 
+        "label" : "Voyages", 
+        "type" : "image",
+        "image" : "/src/assets/icons/voyage_icon.png" 
+        
+    }, 
+    {
+        
+        "name" : "idees-projet",
+        "destination" : "/username/bibles/idees",
+        "label" : "idées",
+        "type" : "image", 
+        "image" : "/src/assets/icons/idea_icon.png"
+            
+    },
+    {
+        
+        "name" : "stats-projet",
+        "destination" : "/username/bibles/stats", 
+        "label" : "Statistiques", 
+        "type" : "image",
+        "image" : "/src/assets/images/features/stats_icon.png"
+            
+    }, 
+    {
+        
+        "name" : "mindmap",
+        "destination" : "/username/bibles/mindmap", 
+        "label" : "Mind Map", 
+        "type" : "image",
+        "image" : "/src/assets/icons/mindmap_icon.png"
+        
+    },
+    {
+        
+        "name" : "docs-projet",
+        "destination" : "/username/bibles/documents", 
+        "label" : "Documents",
+        "type" : "image", 
+        "image" : "/src/assets/images/features/documents_icon.png"
+            
+    }
+]

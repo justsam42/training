@@ -1,0 +1,66 @@
+[
+    {
+        "name" : "new-data",
+        "nature" : "Content-related",
+        "type" : "Data-management",
+        "label" : "Créer",
+        "image" : "/src/assets/images/features/creer_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "settings",
+        "nature" : "User-related",
+        "type" : "Preferences",
+        "label" : "Réglages",
+        "image" : "/src/assets/images/features/settings_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "contacts",
+        "nature" : "Features-related",
+        "type" : "Data-management",
+        "label" : "Contacts",
+        "image" : "/src/assets/images/features/contacts_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "mindmap",
+        "nature" : "Features-related",
+        "type" : "Data-management",
+        "label" : "Mind Map",
+        "image" : "/src/assets/icons/mindmap_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "gantt",
+        "nature" : "Features-related",
+        "type" : "Data-management",
+        "label" : "Gantt",
+        "image" : "/src/assets/icons/gantt_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "media",
+        "label" : "Documents",
+        "nature" : "Content-related",
+        "type" : "Data-management",
+        "image" : "/src/assets/images/features/documents_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "projects",
+        "nature" : "Features-related",
+        "type" : "Data-management",
+        "label" : "Bibles",
+        "image" : "/src/assets/icons/monde_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    },
+    {
+        "name" : "access",
+        "nature" : "User-related",
+        "type" : "Preferences",
+        "label" : "Partages",
+        "image" : "/src/assets/images/features/acces_icon.png", 
+        "description" : "afficher des options de nouveaux objets" 
+    }
+]

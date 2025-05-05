@@ -1,0 +1,18 @@
+[
+    {
+        "id" : "",
+        "name" : "",  
+        "nature" : "Undefined",
+        "type" : "Undefined",
+        "classe" : "Undefined",
+        "description" : "TBD"
+    },
+    {
+        "id" : "",
+        "name" : "",  
+        "nature" : "Template",
+        "type" : "Path",
+        "classe" : "Route",
+        "description" : "TBD"
+    }
+]

@@ -1,0 +1,636 @@
+[
+    {
+        "id" : "left-bar-workspace",
+        "selection" : [
+
+        ]
+    },
+    {
+        "id" : "left-bar-bible",
+        "selection" : [
+            {
+                "level": 1,
+                "nomFonction" : "persos",
+                "destination" : "/username/bibles/personnages", 
+                "label" : "Personnages", 
+                "image" : "/src/assets/icons/hero_icon.png", 
+                "content" : [
+                    {
+                        "level": 2,
+                        "id" : "categorie1",
+                        "label" : "Catgéorie 1",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie2",
+                                "label" : "Sous-catégorie 2",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie3",
+                                "label" : "Sous-catégorie 3",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie2",
+                        "label" : "Catgéorie 2",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie3",
+                        "label" : "Catgéorie 3",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "nomFonction" : "lieux",
+                "destination" : "/username/bibles/lieux", 
+                "label" : "Lieux", 
+                "image" : "/src/assets/icons/location_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "events",
+                "destination" : "/username/bibles/histoires", 
+                "label" : "Chronologie", 
+                "image" : "/src/assets/icons/story_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "items",
+                "destination" : "/username/bibles/objets", 
+                "label" : "Items", 
+                "image" : "/src/assets/icons/item_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "quetes",
+                "destination" : "/username/bibles/quetes", 
+                "label" : "Quetes", 
+                "image" : "/src/assets/icons/battle_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "voyage",
+                "destination" : "/username/bibles/voyages", 
+                "label" : "Voyages", 
+                "image" : "/src/assets/icons/voyage_icon.png" ,
+                "content" : []
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "idees-projet",
+                "destination" : "/username/bibles/idees", 
+                "label" : "Idées", 
+                "image" : "/src/assets/icons/idea_icon.png",
+                "content" : [] 
+            },
+            {
+                "level": 1,
+                "nomFonction" : "stats-projet",
+                "destination" : "/username/bibles/stats", 
+                "label" : "Statistiques", 
+                "image" : "/src/assets/images/features/stats_icon.png",
+                "content" : [] 
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "mindmap",
+                "destination" : "/username/bibles/mindmap", 
+                "label" : "Mind Map", 
+                "image" : "/src/assets/icons/mindmap_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "docs-projet",
+                "destination" : "/username/bibles/documents", 
+                "label" : "Documents", 
+                "image" : "/src/assets/images/features/documents_icon.png",
+                "content" : [] 
+            }
+        ]
+    },
+    {
+        "id" : "left-bar-projet",
+        "selection" : [
+            {
+                "level": 1,
+                "nomFonction" : "persos",
+                "destination" : "/username/bibles/personnages", 
+                "label" : "Personnages", 
+                "image" : "/src/assets/icons/hero_icon.png", 
+                "content" : [
+                    {
+                        "level": 2,
+                        "id" : "categorie1",
+                        "label" : "Catgéorie 1",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie2",
+                                "label" : "Sous-catégorie 2",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie3",
+                                "label" : "Sous-catégorie 3",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie2",
+                        "label" : "Catgéorie 2",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie3",
+                        "label" : "Catgéorie 3",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "nomFonction" : "lieux",
+                "destination" : "/username/bibles/lieux", 
+                "label" : "Lieux", 
+                "image" : "/src/assets/icons/location_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "events",
+                "destination" : "/username/bibles/histoires", 
+                "label" : "Chronologie", 
+                "image" : "/src/assets/icons/story_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "items",
+                "destination" : "/username/bibles/objets", 
+                "label" : "Items", 
+                "image" : "/src/assets/icons/item_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "quetes",
+                "destination" : "/username/bibles/quetes", 
+                "label" : "Quetes", 
+                "image" : "/src/assets/icons/battle_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "voyage",
+                "destination" : "/username/bibles/voyages", 
+                "label" : "Voyages", 
+                "image" : "/src/assets/icons/voyage_icon.png" ,
+                "content" : []
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "idees-projet",
+                "destination" : "/username/bibles/idees", 
+                "label" : "Idées", 
+                "image" : "/src/assets/icons/idea_icon.png",
+                "content" : [] 
+            },
+            {
+                "level": 1,
+                "nomFonction" : "stats-projet",
+                "destination" : "/username/bibles/stats", 
+                "label" : "Statistiques", 
+                "image" : "/src/assets/images/features/stats_icon.png",
+                "content" : [] 
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "mindmap",
+                "destination" : "/username/bibles/mindmap", 
+                "label" : "Mind Map", 
+                "image" : "/src/assets/icons/mindmap_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "docs-projet",
+                "destination" : "/username/bibles/documents", 
+                "label" : "Documents", 
+                "image" : "/src/assets/images/features/documents_icon.png",
+                "content" : [] 
+            }
+        ]
+    },
+    {
+        "id" : "left-bar-planning",
+        "selection" : [
+            {
+                "level": 1,
+                "nomFonction" : "persos",
+                "destination" : "/username/bibles/personnages", 
+                "label" : "Personnages", 
+                "image" : "/src/assets/icons/hero_icon.png", 
+                "content" : [
+                    {
+                        "level": 2,
+                        "id" : "categorie1",
+                        "label" : "Catgéorie 1",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie2",
+                                "label" : "Sous-catégorie 2",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie3",
+                                "label" : "Sous-catégorie 3",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie2",
+                        "label" : "Catgéorie 2",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie3",
+                        "label" : "Catgéorie 3",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "nomFonction" : "lieux",
+                "destination" : "/username/bibles/lieux", 
+                "label" : "Lieux", 
+                "image" : "/src/assets/icons/location_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "events",
+                "destination" : "/username/bibles/histoires", 
+                "label" : "Chronologie", 
+                "image" : "/src/assets/icons/story_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "items",
+                "destination" : "/username/bibles/objets", 
+                "label" : "Items", 
+                "image" : "/src/assets/icons/item_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "quetes",
+                "destination" : "/username/bibles/quetes", 
+                "label" : "Quetes", 
+                "image" : "/src/assets/icons/battle_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "voyage",
+                "destination" : "/username/bibles/voyages", 
+                "label" : "Voyages", 
+                "image" : "/src/assets/icons/voyage_icon.png" ,
+                "content" : []
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "idees-projet",
+                "destination" : "/username/bibles/idees", 
+                "label" : "Idées", 
+                "image" : "/src/assets/icons/idea_icon.png",
+                "content" : [] 
+            },
+            {
+                "level": 1,
+                "nomFonction" : "stats-projet",
+                "destination" : "/username/bibles/stats", 
+                "label" : "Statistiques", 
+                "image" : "/src/assets/images/features/stats_icon.png",
+                "content" : [] 
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "mindmap",
+                "destination" : "/username/bibles/mindmap", 
+                "label" : "Mind Map", 
+                "image" : "/src/assets/icons/mindmap_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "docs-projet",
+                "destination" : "/username/bibles/documents", 
+                "label" : "Documents", 
+                "image" : "/src/assets/images/features/documents_icon.png",
+                "content" : [] 
+            }
+        ]
+    },
+    {
+        "id" : "left-bar-idee",
+        "selection" : [
+            {
+                "level": 1,
+                "nomFonction" : "persos",
+                "destination" : "/username/bibles/personnages", 
+                "label" : "Personnages", 
+                "image" : "/src/assets/icons/hero_icon.png", 
+                "content" : [
+                    {
+                        "level": 2,
+                        "id" : "categorie1",
+                        "label" : "Catgéorie 1",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie2",
+                                "label" : "Sous-catégorie 2",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            },
+                            {
+                                "level":3,
+                                "id" : "sousCategorie3",
+                                "label" : "Sous-catégorie 3",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie2",
+                        "label" : "Catgéorie 2",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "id" : "categorie3",
+                        "label" : "Catgéorie 3",
+                        "content" : [
+                            {
+                                "level":3,
+                                "id" : "sousCategorie1",
+                                "label" : "Sous-catégorie 1",
+                                "content" : [
+                                    "Artemis", 
+                                    "Athena",
+                                    "Astrée"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "level": 1,
+                "nomFonction" : "lieux",
+                "destination" : "/username/bibles/lieux", 
+                "label" : "Lieux", 
+                "image" : "/src/assets/icons/location_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "events",
+                "destination" : "/username/bibles/histoires", 
+                "label" : "Chronologie", 
+                "image" : "/src/assets/icons/story_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "items",
+                "destination" : "/username/bibles/objets", 
+                "label" : "Items", 
+                "image" : "/src/assets/icons/item_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "quetes",
+                "destination" : "/username/bibles/quetes", 
+                "label" : "Quetes", 
+                "image" : "/src/assets/icons/battle_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "voyage",
+                "destination" : "/username/bibles/voyages", 
+                "label" : "Voyages", 
+                "image" : "/src/assets/icons/voyage_icon.png" ,
+                "content" : []
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "idees-projet",
+                "destination" : "/username/bibles/idees", 
+                "label" : "Idées", 
+                "image" : "/src/assets/icons/idea_icon.png",
+                "content" : [] 
+            },
+            {
+                "level": 1,
+                "nomFonction" : "stats-projet",
+                "destination" : "/username/bibles/stats", 
+                "label" : "Statistiques", 
+                "image" : "/src/assets/images/features/stats_icon.png",
+                "content" : [] 
+            }, 
+            {
+                "level": 1,
+                "nomFonction" : "mindmap",
+                "destination" : "/username/bibles/mindmap", 
+                "label" : "Mind Map", 
+                "image" : "/src/assets/icons/mindmap_icon.png",
+                "content" : []
+            },
+            {
+                "level": 1,
+                "nomFonction" : "docs-projet",
+                "destination" : "/username/bibles/documents", 
+                "label" : "Documents", 
+                "image" : "/src/assets/images/features/documents_icon.png",
+                "content" : [] 
+            }
+        ]
+    }
+]

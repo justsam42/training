@@ -1,0 +1,64 @@
+[
+    {
+        "name" : "homePage",
+        "style" : "styleHome",
+        "titre" : null,
+        "image" : null,
+        "selection" : [
+            "brandView",
+            "sharingView",
+            "explorerView",
+            "loginView"
+        ]
+    },
+    {
+        "name" : "dashboardPage",
+        "style" : "styleDashboardHome",
+        "titre" : null,
+        "image" : null,
+        "selection" : [
+            "defaultViewDashboard",
+            "defaultViewProjets"
+        ]
+    },
+    {
+        "name" : "userProjetsPage" ,
+        "style" : "styleProjectsHome", 
+        "titre" : null,
+        "image" : null,
+        "selection" : [
+            "defaultViewProjets"
+        ] 
+    },
+     {
+        "name" : "biblePage",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewBible"
+        ]
+    },
+    {
+        "name" : "planningPage",
+        "style" : "stylePlanningHome",
+        "titre" : null,
+        "image" : null,
+        "selection" : [ 
+            "defaultViewPlanning",
+            "dailyViewPlanning",
+            "weeklyViewPlanning",
+            "monthlyViewPlanning",
+            "yearlyViewPlanning"
+        ]  
+    },
+    {
+        "name" : "planningPage",
+        "style" : "styleIdeeHome",
+        "titre" : null,
+        "image" : null,
+        "selection" : [
+            "defaultViewIdeesStyle"
+        ] 
+    }
+]

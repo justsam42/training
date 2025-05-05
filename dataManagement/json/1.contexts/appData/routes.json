@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "defaultRoute", 
+        "style" : "styleHomeRoute",
+        "selection" : ["homePage"]
+    }   
+    ,{
+        "name" : "workplaceRoute", 
+        "style" : "styleWorkplaceRoute",
+        "selection" : [
+            "dashboardPage", 
+            "userProjectsPage",
+            "biblePage",
+            "planningPage", 
+            "planningPage"
+        ]
+    }  
+]

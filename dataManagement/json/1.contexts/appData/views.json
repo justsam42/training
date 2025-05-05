@@ -1,0 +1,99 @@
+[
+    {
+        "name" : "brandView",
+        "style" : "brandStyle" ,
+        "titre" : "Odyssee",
+        "image" : "/src/assets/icons/brand_icon.png",
+        "selection" : ["batir-Btn", "xplore-Btn"]
+    },
+    {
+        "name": "loginView",
+        "style" : "loginStyle",
+        "titre" : "Odyssee",
+        "image" : "/src/assets/icons/brand_icon.png",
+        "selection" : [ "username-input","password-input"]
+    },
+    {
+        "name": "sharingView",
+        "style" : "sharingStyle",
+        "titre" : "Odyssee",
+        "image" : "/src/assets/images/features/qr_icon.png",
+        "selection" : ["url-input", "research-input"]
+    },
+    {
+        "name": "explorerView",
+        "style" : "explorerStyle",
+        "titre" : "Projets",
+        "image" : "/src/assets/icons/exploration_icon.png", 
+        "selection" : [
+            "mauvais-jumeau",
+            "millenials", 
+            "one-true-path", 
+            "chroniques-du-cercle"
+        ]
+    },
+    {
+        "name": "defaultViewDashboard",
+        "style" : "defaultDashboardStyle",
+        "titre" : "Aujourd'hui", 
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewProjets",
+        "style" : "defaultViewProjectsStyle",
+        "titre" : "Mes projets en cours", 
+        "image" : null,
+        "selection" : []
+    }, 
+    {
+        "name": "defaultViewBible",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Collections",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewPlanning",
+        "style" : "defaultViewPlanningStyle",
+        "titre" : "Date du jour", 
+        "image" : null,
+        "selection" : []
+        
+    },
+    {
+        "name": "dailyViewPlanning",
+        "style" : "dailyViewPlanningStyle",
+        "titre" : "Ma journée",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "weeklyViewPlanning",
+        "style" : "weeklyViewPlanningStyle",
+        "titre" : "Semaine N",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "monthlyViewPlanning",
+        "style" : "monthlyViewPlanningStyle" ,
+        "titre" : "MoisName",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "yearlyViewPlanning",
+        "style" : "yearlyViewPlanningStyle",
+        "titre" : "2026",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name":"defaultViewIdees",
+        "style" : "defaultViewIdeesStyle",
+        "titre" : "Mes idées",
+        "image" : null,
+        "selection" : []
+    } 
+]

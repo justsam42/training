@@ -1,0 +1,102 @@
+{
+    "brandStyle" : {
+        "display" : "flex",
+        "flexDirection" : "column",
+        "border": "1px dotted black",
+        "alignItems" : "center",
+        "justifyContent" : "space-evenly",
+        "gap" : "1.5vh",
+        "padding" : "0.5em"
+        },
+    "loginStyle" : {
+        "display" : "flex",
+        "flexDirection" : "column",
+        "border": "1px dotted black",
+        "alignItems" : "center",
+        "justifyContent" : "space-evenly",
+        "gap" : "1.5vh",
+        "padding" : "1em"
+    },
+    "sharingStyle" : {
+        "display" : "flex",
+        "flexDirection" : "column",
+        "border": "1px dotted black",
+        "alignItems" : "center",
+        "justifyContent" : "space-evenly",
+        "gap" : "1.5vh",
+        "padding" : "1em"
+    },
+    "explorerStyle" : {
+        "display" : "flex",
+        "flexDirection" : "",
+        "border": "1px dotted black",
+        "alignItems" : "center",
+        "justifyContent" : "space-evenly",
+        "gap" : "1.5vh",
+        "padding" : "1em"
+    },
+    "defaultDashboardStyle" : {
+        "display":"flex",
+        "justifyContent": "space-evenly",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted blue" 
+    },
+    "defaultViewProjectsStyle" : {
+        "display":"grid",
+        "gridTemplateColumns" : "repeat(auto-fit, minmax(15vw, 1fr))",
+        "gap":"1vw",
+        "padding":"0.5em",
+        "border": "1px dotted blue" 
+    },
+    "defaultViewBibleStyle" : {
+        "display":"grid",
+        "gridTemplateColumns" : "repeat(auto-fit, minmax(20vh, 1fr))",
+        "gap":"1vw",
+        "padding":"0.5em",
+        "border": "1px dotted blue" 
+    },
+    "defaultViewPlanningStyle" : {
+        "display":"flex",
+        "justifyContent": "space-evenly",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted blue"
+    },
+    "dailyViewPlanningStyle": {
+        "display":"flex",
+        "justifyContent": "space-evenly",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted blue"
+    },
+    "weeklyViewPlanningStyle" : {
+            "display":"flex",
+            "justifyContent": "space-evenly",
+            "gap":"0.5vh",
+            "padding":"0.5em",
+            "border": "1px dotted blue"
+        },
+    "monthlyViewPlanningStyle" : {
+        "display":"flex",
+        "justifyContent": "space-evenly",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted blue"
+    },
+    "yearlyViewPlanningStyle" : {
+        "display":"flex",
+        "justifyContent": "space-evenly",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted blue"
+    },
+    "defaultViewIdeesStyle" : {
+            "display":"grid",
+            "gridTemplateColumns" : "repeat(auto-fit, minmax(17vh, 1fr))",
+            "justifyItems" : "center",
+            "gap":"0.5vw",
+            "padding":"0.5em",
+            "border": "1px dotted blue"
+        }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "defaultTopBar",
+        "style" : "styleDefaultTopBar",
+        "selection" : ["homeMenu-notLogged", "userMenu-notLogged"]
+    },
+    {
+        "name" : "loggedInHome",
+        "style" :"styleLoggedInTopBar",
+        "selection" : ["homeMenu-logged", "userMenu-logged"]
+    },
+    {
+        "name" : "loggedInWorkspace",
+        "style" : "styleLoggedInWorkspace",
+        "selection" : [
+            "homeMenu-logged",
+            "userMenu-logged", 
+            "navMenu-default",
+            "navMenu-projets", 
+            "navMenu-bibles",
+            "navMenu-planning",
+            "navMenu-idees"
+        ]
+    },
+    {
+        "name" : "leftBarDefault",
+        "style" : "styleLeftBarDefault",
+        "selection" : ["features"] 
+    }
+]

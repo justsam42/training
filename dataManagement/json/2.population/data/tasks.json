@@ -1,0 +1,119 @@
+[
+    {
+        "id" : "a-faire",
+        "label" : "A faire",
+        "tachesList" : []
+    },
+    {
+        "id" : "rdv",
+        "label" : "Rendez-vous",
+        "tachesList" : []
+    },
+    {
+        "id" : "msg",
+        "label" : "A contacter",
+        "tachesList" : []
+    },
+    {
+        "id" : "creneau1",
+        "label" : "Tranche horaire 1",
+        "tachesList" : []
+    },
+    {
+        "id" : "creneau2",
+        "label" : "Tranche horaire 2",
+        "tachesList" : []
+    },
+    {
+        "id" : "creneau3",
+        "label" : "Tranche horaire 3",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection1",
+        "label" : "Mon filtre perso 1",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection2",
+        "label" : "Mon filtre perso 2",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection3",
+        "label" : "Mon filtre perso 3",
+        "tachesList" : []
+    },
+    {
+        "id" : "Lundi",
+        "label" : "Lundi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Mardi",
+        "label" : "Mardi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Mercredi",
+        "label" : "Mercredi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Jeudi",
+        "label" : "Jeudi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Vendredi",
+        "label" : "Vendredi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Samedi",
+        "label" : "Samedi",
+        "tachesList" : []
+    },
+    {
+        "id" : "Dimanche",
+        "label" : "Dimanche",
+        "tachesList" : []
+    },
+    {
+        "id" : "semaine1",
+        "label" : "semaine1",
+        "tachesList" : []
+    },
+    {
+        "id" : "semaine2",
+        "label" : "semaine2",
+        "tachesList" : []
+    },
+    {
+        "id" : "semaine3",
+        "label" : "semaine3",
+        "tachesList" : []
+    },
+    {
+        "id" : "semaine4",
+        "label" : "semaine4",
+        "tachesList" : []
+    },
+    {
+        "id" : "semaine5",
+        "label" : "semaine5",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection1",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection2",
+        "tachesList" : []
+    },
+    {
+        "id" : "userSelection3",
+        "tachesList" : []
+    }
+]

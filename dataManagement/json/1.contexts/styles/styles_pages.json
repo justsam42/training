@@ -1,0 +1,56 @@
+{
+    "styleHome" : {
+        "display" : "flex",
+        "flexDirection" : "column",
+        "border": "1px dotted black",
+        "alignItems" : "center",
+        "justifyContent" : "",
+        "gap" : "1.5vh",
+        "padding" : ""
+    }, 
+    "styleDashboardHome" : {
+        "display":"flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted black"
+        
+    },
+    "styleProjectsHome" : {
+        "display":"flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted black"
+        
+    },
+    "styleBibleHome" : {
+        "display":"flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted black"
+        
+    },
+    "stylePlanningHome" : {
+        "display":"flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted black"
+        
+    },  
+    "styleIdeeHome" : {
+        "display":"flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "gap":"0.5vh",
+        "padding":"0.5em",
+        "border": "1px dotted black"
+        
+    }  
+}

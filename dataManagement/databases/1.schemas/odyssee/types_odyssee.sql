@@ -9,13 +9,13 @@ CREATE TYPE "app_names" AS ENUM('odyssee', 'undefined');
 
 
 CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Actionable', 'Display','Other','Unknown', 'Undefined');
-CREATE TYPE "object_types" AS ENUM('Route', 'Page', 'View', 'Section','Component','Style', 'Data','Undefined' 'Unknown');
-CREATE TYPE "object_classes" AS ENUM('Media', 'Text', 'Button', 'Effect','Unknown', 'Undefined');
+CREATE TYPE "object_types" AS ENUM('Media', 'Style', 'Path', 'Trigger', 'Effect','Data', 'Other','Undefined' 'Unknown');
+CREATE TYPE "object_classes" AS ENUM('Text', 'Button', 'Route', 'Page', 'View', 'Section','Component','Other', 'Unknown', 'Undefined');
 CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children', 'Trigger', 'Target')
 
 
 CREATE TYPE "function_natures" AS ENUM('Interface-related', 'User-related', 'Features-related', 'Content-related', 'Other', 'Undefined' 'Unknown');
-CREATE TYPE "function_types" AS ENUM('SideEffect', 'Styling', 'Displaying', 'Transforming', 'Data mangagement','Unknown', 'Undefined');
+CREATE TYPE "function_types" AS ENUM('SideEffect', 'Styling', 'Displaying', 'Transforming', 'Data mangagement','Preferences','Unknown', 'Undefined');
 CREATE TYPE "function_scopes" AS ENUM('Global', 'Local', 'Individual', 'Other','Unknown', 'Undefined');
 
 CREATE TYPE "requirement_natures" AS ENUM('Undefined' 'Unknown');
@@ -36,8 +36,8 @@ CREATE TYPE "requirement_types" AS ENUM('Undefined' 'Unknown');
 ----- Projets
 
 CREATE TYPE "project_nature" AS ENUM('Scenario', 'Book', 'Paper', 'Other', 'Undefined');
-CREATE TYPE "project_type" AS ENUM('BD', 'Movie', 'Serial', 'Novel', 'Game', 'Science', 'Other', 'Undefined');
-CREATE TYPE "project_status" AS ENUM('Idea', 'Design', 'Developpment', 'Improvement', 'Approved','Undefined');
+CREATE TYPE "project_type" AS ENUM('Graphic', 'Movie', 'Serial', 'Novel', 'Game', 'Science', 'Other', 'Undefined');
+CREATE TYPE "project_status" AS ENUM('Idea', 'Design', 'Developpment', 'Improvement', 'Approved','Suspended', 'Abordted', 'Pivoting','Undefined');
 
 ----- Task
 

@@ -21,10 +21,10 @@ CREATE TABLE IF NOT EXISTS "users" (
 CREATE TABLE IF NOT EXISTS "objects" (
     "id" SERIAL, 
     "name" VARCHAR(64) NOT NULL,
-    "description" VARCHAR(256) NOT NULL,
     "nature" "object_natures" NOT NULL DEFAULT "Undefined",
     "type" "object_types" NOT NULL DEFAULT "Undefined",
     "classe" "object_classes" NOT NULL DEFAULT "Undefined",
+    "description" VARCHAR(256) NOT NULL DEFAULT "TBD",
     PRIMARY KEY("id"),
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS "functions" (
     "trigger_id" INT, 
     "target_id" INT,
     "expected_effect" VARCHAR(256) NOT NULL,
-    "asynchroous" BOOLEAN DEFAULT 0,
+    "asynchronous" BOOLEAN DEFAULT 0,
     PRIMARY KEY("id"),
     FOREIGN KEY("trigger_id") REFERENCES "objects"("id"),
     FOREIGN KEY("target_id") REFERENCES "objects"("id")

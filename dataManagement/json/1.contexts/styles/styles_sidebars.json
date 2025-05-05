@@ -1,0 +1,35 @@
+{
+    "styleDefaultTopBar" : {
+        "gridArea" : "header",
+        "display" :"flex",
+        "border": "1px dotted black",
+        "justifyContent": "space-between",
+        "alignItems" : "center",
+        "padding" : "4px 10px 4px 10px"
+    },
+    "styleLoggedInHome" : {
+        "gridArea" : "header",
+        "display" :"flex",
+        "border": "1px dotted black",
+        "justifyContent": "space-between",
+        "alignItems" : "center",
+        "padding" : "4px 10px 4px 10px"
+    },
+    "styleLoggedInWorkspace" : {
+        "gridArea" : "header",
+        "display" :"flex",
+        "border": "1px dotted black",
+        "color" : "#DEF6F0",
+        "background" : "#005B70",
+        "justifyContent": "space-between",
+        "alignItems" : "center",
+        "padding" : "4px 10px 4px 10px"
+    },
+    "styleLeftBarDefault" : {
+        "gridArea" : "leftMenu",
+        "display" :"flex",
+        "width": "fit-content",
+        "alignItems": "flex-start"
+    }
+
+}
