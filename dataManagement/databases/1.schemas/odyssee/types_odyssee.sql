@@ -8,10 +8,10 @@
 CREATE TYPE "app_names" AS ENUM('odyssee', 'undefined');
 
 
-CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Actionable', 'Display','Other','Unknown', 'Undefined');
-CREATE TYPE "object_types" AS ENUM('Media', 'Style', 'Path', 'Trigger', 'Effect','Data', 'Other','Undefined' 'Unknown');
-CREATE TYPE "object_classes" AS ENUM('Text', 'Button', 'Route', 'Page', 'View', 'Section','Component','Other', 'Unknown', 'Undefined');
-CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children', 'Trigger', 'Target')
+CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Interactif', 'Display','Other','Unknown', 'Undefined');
+CREATE TYPE "object_types" AS ENUM('Media', 'Feature','Style', 'Path', 'Trigger', 'Effect','Data', 'Other','Undefined' 'Unknown');
+CREATE TYPE "object_classes" AS ENUM('Text', 'Action', 'Route', 'Page', 'View', 'Section','Component','Other', 'Unknown', 'Undefined');
+CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children','Other','Trigger', 'Target')
 
 
 CREATE TYPE "function_natures" AS ENUM('Interface-related', 'User-related', 'Features-related', 'Content-related', 'Other', 'Undefined' 'Unknown');

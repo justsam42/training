@@ -1,96 +1,123 @@
 [
     {
         "name" : "batir-Btn",
-        "destination" : "/login",
-        "type" : "image",
-        "label" : "Bâtir",
-        "image" : "/src/assets/icons/atlas_icon.png"
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
+        "description" : "Portail d'authentification vers le User Workplace",
+        "destination" : "",
+        "image" : "/src/assets/icons/atlas_icon.png",
+        "label" : "Bâtir"
     },
     {
         "name" : "xplore-Btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Route",
+        "description" : "Portail d'accès vers les projets et users index",
         "destination" : "/projets",
-        "label" : "Explorer",
-        "type" : "image",
-        "image" : "/src/assets/icons/exploration_icon.png"
+        "image" : "/src/assets/icons/exploration_icon.png",
+        "label" : "Explorer"
+        
     },
     {
-        "name" : "persos",
+        "name" : "char-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/personnages", 
-        "type" : "image",
         "label" : "Personnages", 
         "image" : "/src/assets/icons/hero_icon.png"
     },
     {
-        "name" : "lieux",
+        "name" : "locations-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/lieux", 
-        "type" : "image",
         "label" : "Lieux", 
         "image" : "/src/assets/icons/location_icon.png"
     },
     {
-        "name" : "events",
+        "name" : "events-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/histoires", 
-        "type" : "image",
         "label" : "Chronologie", 
         "image" : "/src/assets/icons/story_icon.png"
     },
     {
-        "name" : "items",
+        "name" : "items-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/objets", 
-        "type" : "image",
         "label" : "Items", 
         "image" : "/src/assets/icons/item_icon.png"
         
     },
     {
-        "name" : "quetes",
+        "name" : "quests-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/quetes", 
-        "type" : "image",
         "label" : "Quetes", 
         "image" : "/src/assets/icons/battle_icon.png"
         
     },
     {
-        "name" : "voyage",
+        "name" : "journeys-btn",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/voyages", 
         "label" : "Voyages", 
-        "type" : "image",
         "image" : "/src/assets/icons/voyage_icon.png" 
         
     }, 
     {
         
         "name" : "idees-projet",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/idees",
-        "label" : "idées",
-        "type" : "image", 
+        "label" : "Idées",
         "image" : "/src/assets/icons/idea_icon.png"
             
     },
     {
         
         "name" : "stats-projet",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/stats", 
         "label" : "Statistiques", 
-        "type" : "image",
         "image" : "/src/assets/images/features/stats_icon.png"
             
     }, 
     {
         
         "name" : "mindmap",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/mindmap", 
         "label" : "Mind Map", 
-        "type" : "image",
         "image" : "/src/assets/icons/mindmap_icon.png"
         
     },
     {
         
         "name" : "docs-projet",
+        "nature" : "Interactif",
+        "type" : "Path",
+        "classe" : "Component",
         "destination" : "/username/bibles/documents", 
         "label" : "Documents",
-        "type" : "image", 
         "image" : "/src/assets/images/features/documents_icon.png"
             
     }

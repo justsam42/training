@@ -1,66 +1,168 @@
+
 [
     {
-        "name" : "new-data",
-        "nature" : "Content-related",
-        "type" : "Data-management",
-        "label" : "Créer",
-        "image" : "/src/assets/images/features/creer_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "name" : "build",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Route",
+        "label" : "Bâtir",
+        "description" : "Portail d'authentification vers le User Workplace",
+        "image" : "/src/assets/icons/atlas_icon.png",
+        "destination" : "/login"
     },
     {
-        "name" : "settings",
-        "nature" : "User-related",
-        "type" : "Preferences",
-        "label" : "Réglages",
-        "image" : "/src/assets/images/features/settings_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "name" : "explore",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Route",
+        "description" : "Portail d'accès vers les projets et users index",
+        "label" : "Explorer",
+        "image" : "/src/assets/icons/exploration_icon.png",
+        "destination" : "/projets"
+    },
+    {
+        "name" : "sharing",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Route",
+        "description" : "Portail d'accès vers un projet ou gallerie avec une clé",
+        "label" : "Trouver un projet",
+        "image" : "/src/assets/icons/qr_code_icon.png",
+        "destination" : "/sharing"
+    },
+    {
+        "name" : "bibles",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "Créer une nouvelle bible",
+        "label" : "Bibles",
+        "image" : "/src/assets/icons/monde_icon.png",
+        "destination" : "/username/bibles" 
+    },  
+    {
+        "name" : "new-data",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "Afficher des options de nouveaux objets de categories selectionnées",
+        "label" : "Créer",
+        "image" : "/src/assets/images/Feature/creer_icon.png"
     },
     {
         "name" : "contacts",
-        "nature" : "Features-related",
-        "type" : "Data-management",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets" ,
         "label" : "Contacts",
-        "image" : "/src/assets/images/features/contacts_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "image" : "/src/assets/images/Feature/contacts_icon.png",
+        "destination" : "/username/contacts"       
     },
     {
         "name" : "mindmap",
-        "nature" : "Features-related",
-        "type" : "Data-management",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
         "label" : "Mind Map",
-        "image" : "/src/assets/icons/mindmap_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "image" : "/src/assets/icons/mindmap_icon.png",
+        "destination" : "/username/mindmap"         
     },
     {
         "name" : "gantt",
-        "nature" : "Features-related",
-        "type" : "Data-management",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets" ,
         "label" : "Gantt",
-        "image" : "/src/assets/icons/gantt_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "image" : "/src/assets/icons/gantt_icon.png",
+        "destination" : "/username/gantts"         
     },
     {
         "name" : "media",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
         "label" : "Documents",
-        "nature" : "Content-related",
-        "type" : "Data-management",
-        "image" : "/src/assets/images/features/documents_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
-    },
-    {
-        "name" : "projects",
-        "nature" : "Features-related",
-        "type" : "Data-management",
-        "label" : "Bibles",
-        "image" : "/src/assets/icons/monde_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "image" : "/src/assets/images/Feature/documents_icon.png",
+        "destination" : "/username/medias"         
     },
     {
         "name" : "access",
-        "nature" : "User-related",
-        "type" : "Preferences",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
         "label" : "Partages",
-        "image" : "/src/assets/images/features/acces_icon.png", 
-        "description" : "afficher des options de nouveaux objets" 
+        "image" : "/src/assets/images/Feature/acces_icon.png",
+        "destination" : "/username/access"        
+    },
+    {
+        "name" : "settings",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Réglages",
+        "image" : "/src/assets/images/Feature/settings_icon.png",
+        "destination" : "/username/settings"          
+    },
+    {
+        "name" : "persos",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Personnages", 
+        "image" : "/src/assets/icons/hero_icon.png"        
+    },
+    {
+        "name" : "lieux",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Lieux", 
+        "image" : "/src/assets/icons/location_icon.png"
+    },
+    {
+        "name" : "events",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Chronologie", 
+        "image" : "/src/assets/icons/story_icon.png"        
+    },
+    {
+        "name" : "items",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Items", 
+        "image" : "/src/assets/icons/item_icon.png"       
+    },
+    {
+        "name" : "quests",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "afficher des options de nouveaux objets" ,
+        "label" : "Quetes", 
+        "image" : "/src/assets/icons/battle_icon.png"
+               
+    },
+    {
+        "name" : "journeys",
+        "nature" : "Foundation",
+        "classe" : "Component",
+        "type" : "Feature",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Voyages", 
+        "image" : "/src/assets/icons/voyage_icon.png"       
     }
 ]
+

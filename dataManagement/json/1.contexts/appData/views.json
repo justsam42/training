@@ -54,6 +54,48 @@
         "selection" : []
     },
     {
+        "name": "defaultViewContact",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Contacts",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewMedia",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Médias",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewAccess",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Partages",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewGantt",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Rétroplannings",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewMindmap",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Cartes Heuristiques",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewSettings",
+        "style" : "defaultViewBibleStyle",
+        "titre" : "Mes Réglages",
+        "image" : null,
+        "selection" : []
+    },
+    {
         "name": "defaultViewPlanning",
         "style" : "defaultViewPlanningStyle",
         "titre" : "Date du jour", 

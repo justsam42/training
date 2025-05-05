@@ -1,6 +1,9 @@
 [
     {
         "name" : "homePage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "styleHome",
         "titre" : null,
         "image" : null,
@@ -13,6 +16,9 @@
     },
     {
         "name" : "dashboardPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "styleDashboardHome",
         "titre" : null,
         "image" : null,
@@ -22,7 +28,10 @@
         ]
     },
     {
-        "name" : "userProjetsPage" ,
+        "name" : "userProjetsPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "styleProjectsHome", 
         "titre" : null,
         "image" : null,
@@ -32,6 +41,9 @@
     },
      {
         "name" : "biblePage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "styleBibleHome",
         "titre" : null,
         "image" : null, 
@@ -41,6 +53,9 @@
     },
     {
         "name" : "planningPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "stylePlanningHome",
         "titre" : null,
         "image" : null,
@@ -53,12 +68,87 @@
         ]  
     },
     {
-        "name" : "planningPage",
+        "name" : "ideePage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
         "style" : "styleIdeeHome",
         "titre" : null,
         "image" : null,
         "selection" : [
             "defaultViewIdeesStyle"
         ] 
+    },
+    {
+        "name" : "contactPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewContact"
+        ]
+    },
+    {
+        "name" : "mediaPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewMedia"
+        ]
+    },
+    {
+        "name" : "accessPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewAccess"
+        ]
+    },
+    {
+        "name" : "ganttPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewGantt"
+        ]
+    },
+    {
+        "name" : "mindmapPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewMindmap"
+        ]
+    },
+    {
+        "name" : "settingPage",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Page",
+        "style" : "styleBibleHome",
+        "titre" : null,
+        "image" : null, 
+        "selection" : [ 
+            "defaultViewSettings"
+        ]
     }
 ]
