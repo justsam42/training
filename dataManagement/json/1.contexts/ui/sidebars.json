@@ -1,16 +1,46 @@
 [
     {
         "name" : "defaultTopBar",
-        "style" : "styleDefaultTopBar",
-        "selection" : ["homeMenu-notLogged", "userMenu-notLogged"]
+        "nature" : "Template",
+        "type" : "UI",
+        "classe" : "Component",
+        "description" : "Page de recherche de projet ou de user",
+        "style" : "styleTopBarHome" ,
+        "selection" : [
+            "homeMenu-notLogged", 
+            "userMenu-notLogged"
+        ]
     },
     {
         "name" : "loggedInHome",
-        "style" :"styleLoggedInTopBar",
-        "selection" : ["homeMenu-logged", "userMenu-logged"]
+        "nature" : "Template",
+        "type" : "UI",
+        "classe" : "Component",
+        "description" : "Page de recherche de projet ou de user",
+        "style" :"styleTopBarHome",
+        "selection" : [
+            "homeMenu-logged", 
+            "userMenu-logged"
+        ]
+    },
+    {
+        "name" : "leftBarDefault",
+        "nature" : "Template",
+        "type" : "UI",
+        "classe" : "Component",
+        "description" : "Page de recherche de projet ou de user",
+        "style" : "styleLeftBarDefault",
+        "selection" : [
+            "features"
+        ]
+
     },
     {
         "name" : "loggedInWorkspace",
+        "nature" : "Foundation",
+        "type" : "UI",
+        "classe" : "Component",
+        "description" : "Page de recherche de projet ou de user",
         "style" : "styleLoggedInWorkspace",
         "selection" : [
             "homeMenu-logged",
@@ -21,10 +51,5 @@
             "navMenu-planning",
             "navMenu-idees"
         ]
-    },
-    {
-        "name" : "leftBarDefault",
-        "style" : "styleLeftBarDefault",
-        "selection" : ["features"] 
     }
 ]

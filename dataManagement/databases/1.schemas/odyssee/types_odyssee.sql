@@ -9,7 +9,7 @@ CREATE TYPE "app_names" AS ENUM('odyssee', 'undefined');
 
 
 CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Interactif', 'Display','Other','Unknown', 'Undefined');
-CREATE TYPE "object_types" AS ENUM('Media', 'Feature','Style', 'Path', 'Trigger', 'Effect','Data', 'Other','Undefined' 'Unknown');
+CREATE TYPE "object_types" AS ENUM('Media', 'Feature','Style', 'Path', 'Trigger', 'Effect','Data', 'UI', 'Other','Undefined' 'Unknown');
 CREATE TYPE "object_classes" AS ENUM('Text', 'Action', 'Route', 'Page', 'View', 'Section','Component','Other', 'Unknown', 'Undefined');
 CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children','Other','Trigger', 'Target')
 
@@ -41,7 +41,7 @@ CREATE TYPE "project_status" AS ENUM('Idea', 'Design', 'Developpment', 'Improvem
 
 ----- Task
 
-CREATE TYPE "task_nature" AS ENUM('Rendez-vous', 'To-do', 'Meeting', 'Other', 'Undefined');
+CREATE TYPE "task_nature" AS ENUM('Rendez-vous', 'To-do', 'Meeting', 'To Contact','Other', 'Undefined');
 CREATE TYPE "task_type" AS ENUM('Urgent', 'Important', 'Can wait', 'Standard');
 CREATE TYPE "task_status" AS ENUM('Coming', 'Current', 'Done', 'Undefined');
 

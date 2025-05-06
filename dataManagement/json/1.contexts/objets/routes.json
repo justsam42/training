@@ -1,11 +1,17 @@
 [
     {
         "name" : "defaultRoute", 
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Route",
         "style" : "styleHomeRoute",
         "selection" : ["homePage"]
     }   
     ,{
         "name" : "workplaceRoute", 
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "Route",
         "style" : "styleWorkplaceRoute",
         "selection" : [
             "dashboardPage", 

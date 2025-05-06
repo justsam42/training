@@ -4,6 +4,7 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
+        "description" : "Page d'accueil du site",
         "style" : "styleHome",
         "titre" : null,
         "image" : null,
@@ -19,7 +20,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleDashboardHome",
+        "description" : "Page d'accueil du Workplace",
+        "style" : "styleHomeWorkplace" ,
         "titre" : null,
         "image" : null,
         "selection" : [
@@ -32,7 +34,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleProjectsHome", 
+        "description" : "Page d'accueil des Projets",
+        "style" : "styleHomeWorkplace" , 
         "titre" : null,
         "image" : null,
         "selection" : [
@@ -44,7 +47,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Bibles",
+        "style" : "styleHomeWorkplace" ,
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -56,7 +60,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "stylePlanningHome",
+        "description" : "Page d'accueil du planning",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null,
         "selection" : [ 
@@ -72,9 +77,10 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleIdeeHome",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null,
+        "description" : "Page d'accueil des Idées",
         "selection" : [
             "defaultViewIdeesStyle"
         ] 
@@ -84,7 +90,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Contacts",
+        "style" : "styleHomeWorkplace" ,
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -96,7 +103,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Documents",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -108,7 +116,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Partages",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -120,7 +129,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Gantts",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -132,7 +142,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Mindmap",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null, 
         "selection" : [ 
@@ -144,7 +155,8 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Page",
-        "style" : "styleBibleHome",
+        "description" : "Page d'accueil des Settings",
+        "style" : "styleHomeWorkplace",
         "titre" : null,
         "image" : null, 
         "selection" : [ 

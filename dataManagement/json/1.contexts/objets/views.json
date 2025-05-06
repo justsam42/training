@@ -1,0 +1,223 @@
+[
+    {
+        "name" : "brandView",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut du site",
+        "style" : "homeViewsStyle" ,
+        "titre" : "Odyssee",
+        "image" : "/src/assets/icons/brand_icon.png",
+        "selection" : [
+            "batir-Btn", 
+            "xplore-Btn"
+        ]
+    },
+    {
+        "name": "loginView",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Page de connexion de l'user",
+        "style" : "homeViewsStyle",
+        "titre" : "Odyssee",
+        "image" : "/src/assets/icons/brand_icon.png",
+        "selection" : [ 
+            "username-input",
+            "password-input"
+        ]
+    },
+    {
+        "name": "sharingView",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Page de recherche de projet partagé",
+        "style" : "homeViewsStyle",
+        "titre" : "Odyssee",
+        "image" : "/src/assets/images/features/qr_icon.png",
+        "selection" : [
+            "url-input", 
+            "research-input"
+        ]
+    },
+    {
+        "name": "explorerView",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Page de recherche de projet ou de user",
+        "style" : "homeViewsStyle",
+        "titre" : "Projets",
+        "image" : "/src/assets/icons/exploration_icon.png", 
+        "selection" : [
+            "mauvais-jumeau",
+            "millenials", 
+            "one-true-path", 
+            "chroniques-du-cercle"
+        ]
+    },
+    {
+        "name": "defaultViewDashboard",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut du Workplace",
+        "style" : "defaultDashboardStyle",
+        "titre" : "Aujourd'hui", 
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewProjets",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Projets",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes projets en cours", 
+        "image" : null,
+        "selection" : []
+    }, 
+    {
+        "name": "defaultViewBible",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Bibles",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Collections",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewContact",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Contacts",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Contacts",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewMedia",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Documents",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Médias",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewAccess",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Partages",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Partages",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewGantt",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Gantts",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Rétroplannings",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewMindmap",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Mindmap",
+        "style" : "gridAutoXLStyle",
+        "titre" : "Mes Cartes Heuristiques",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewSettings",
+        "style" : "gridAutoXLStyle",
+        "description" : "Vue par défaut des Settings",
+        "titre" : "Mes Réglages",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "defaultViewPlanning",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut du planning",
+        "style" : "defaultViewPlanningStyle",
+        "titre" : "Date du jour", 
+        "image" : null,
+        "selection" : []
+        
+    },
+    {
+        "name": "dailyViewPlanning",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par jour du planning",
+        "style" : "dailyViewPlanningStyle",
+        "titre" : "Ma journée",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "weeklyViewPlanning",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par semaine du planning",
+        "style" : "weeklyViewPlanningStyle",
+        "titre" : "Semaine N",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "monthlyViewPlanning",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par mois du planning",
+        "style" : "monthlyViewPlanningStyle" ,
+        "titre" : "MoisName",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name": "yearlyViewPlanning",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par année du planning",
+        "style" : "yearlyViewPlanningStyle",
+        "titre" : "2026",
+        "image" : null,
+        "selection" : []
+    },
+    {
+        "name":"defaultViewIdees",
+        "nature" : "Foundation",
+        "type" : "Path",
+        "classe" : "View",
+        "description" : "Vue par défaut des Idées",
+        "style" : "defaultViewIdeesStyle",
+        "titre" : "Mes idées",
+        "image" : null,
+        "selection" : []
+    } 
+]

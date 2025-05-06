@@ -16,6 +16,17 @@ CREATE TABLE IF NOT EXISTS "users" (
     PRIMARY KEY("id")
 );
 
+--- mots pour attribuer des keywords ou label pour l'ensemble des objets
+CREATE TABLE IF NOT EXISTS "glossary" (
+    "id" SERIAL, 
+    "entry" VARCHAR(64) NOT NULL,
+    "nature" "entry_natures" NOT NULL DEFAULT "Undefined",
+    "type" "entry_types" NOT NULL DEFAULT "Undefined",
+    "classe" "entry_classes" NOT NULL DEFAULT "Undefined",
+    "description" VARCHAR(256) NOT NULL DEFAULT "TBD",
+    PRIMARY KEY("id")
+);
+
 
 --- objects comme dans DOM ou JSON
 CREATE TABLE IF NOT EXISTS "objects" (
@@ -46,7 +57,7 @@ CREATE TABLE IF NOT EXISTS "functions" (
     "nature" "function_natures" NOT NULL DEFAULT "Undefined",
     "type" "function_type" NOT NULL DEFAULT "Undefined",
     "scope" "function_scope" NOT NULL DEFAULT "Undefined"
-    "description" VARCHAR(256) NOT NULL,
+    "description" VARCHAR(256) NOT NULL DEFAULT "TBD",
     "trigger_id" INT, 
     "target_id" INT,
     "expected_effect" VARCHAR(256) NOT NULL,
@@ -94,12 +105,12 @@ CREATE TABLE IF NOT EXISTS "tasks" (
     "nature" "task_nature" NOT NULL DEFAULT "Undefined",
     "type" "task_type" NOT NULL DEFAULT "Standard",
     "status" "task_status" NOT NULL DEFAULT "Undefined",
-    "creation_date" DATE,
-    "start_date" DATE,
-    "start_time" TIME,
-    "end_date" DATE,
-    "end_time" TIME,
-    "description" VARCHAR(1024) NOT NULL,
+    "creation_date" TIMESTAMPTZ NOT NULL DEFAULT "creation_date"= CURRENT_TIMESTAMP(),
+    "start_date" DATE NOT NULL DEFAULT "start_date"= CURRENT_DATE(),
+    "start_time" TIME DEFAULT "start_time"= CURRENT_TIME(),
+    "end_date" DATE NOT NULL DEFAULT "end_date"= CURRENT_DATE(),
+    "end_time" TIME DEFAULT "end_time"= CURRENT_TIME(),
+    "description" VARCHAR(1024) NOT NULL DEFAULT "TBD",
     "user_id" INT,
     "project_id" INT,
     PRIMARY KEY("id"),
@@ -126,7 +137,7 @@ CREATE TABLE IF NOT EXISTS "bibles" (
     "name" VARCHAR(128) NOT NULL,
     "project_id" INT,
     "creation_date" DATE,
-    "description" VARCHAR(1024),
+    "description" VARCHAR(1024) NOT NULL DEFAULT "TBD",
     "owner_id" INT,
     PRIMARY KEY("id"),
     FOREIGN KEY("owner_id") REFERENCES "users"("id"),
@@ -140,7 +151,7 @@ CREATE TABLE IF NOT EXISTS "ideas" (
     "type" "idea_type" NOT NULL DEFAULT "Random",
     "status" "idea_status" NOT NULL DEFAULT "Raw",
     "project_id" INT,
-    "description" VARCHAR(1024) NOT NULL,
+    "description" VARCHAR(1024) NOT NULL DEFAULT "TBD",
     "creation_date" DATE,
     "owner_id" INT,
     PRIMARY KEY("id"),

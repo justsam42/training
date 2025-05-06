@@ -1,13 +1,5 @@
 {
-    "styleDefaultTopBar" : {
-        "gridArea" : "header",
-        "display" :"flex",
-        "border": "1px dotted black",
-        "justifyContent": "space-between",
-        "alignItems" : "center",
-        "padding" : "4px 10px 4px 10px"
-    },
-    "styleLoggedInHome" : {
+    "styleTopBarHome" : {
         "gridArea" : "header",
         "display" :"flex",
         "border": "1px dotted black",
