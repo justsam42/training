@@ -15,46 +15,12 @@
         "padding":"0.5em",
         "border": "1px dotted blue" 
     },
-    "defaultDashboardStyle" : {
+    "defaultFlexColumnStyle" : {
         "display":"flex",
         "justifyContent": "space-evenly",
         "gap":"0.5vh",
         "padding":"0.5em",
         "border": "1px dotted blue" 
-    },
-    "defaultViewPlanningStyle" : {
-        "display":"flex",
-        "justifyContent": "space-evenly",
-        "gap":"0.5vh",
-        "padding":"0.5em",
-        "border": "1px dotted blue"
-    },
-    "dailyViewPlanningStyle": {
-        "display":"flex",
-        "justifyContent": "space-evenly",
-        "gap":"0.5vh",
-        "padding":"0.5em",
-        "border": "1px dotted blue"
-    },
-    "weeklyViewPlanningStyle" : {
-        "display":"flex",
-        "justifyContent": "space-evenly",
-        "gap":"0.5vh",
-        "padding":"0.5em",
-        "border": "1px dotted blue"
-    },
-    "monthlyViewPlanningStyle" : {
-        "display":"flex",
-        "justifyContent": "space-evenly",
-        "gap":"0.5vh",
-        "padding":"0.5em",
-        "border": "1px dotted blue"
-    },
-    "yearlyViewPlanningStyle" : {
-        "display":"flex",
-        "justifyContent": "space-evenly",
-        "gap":"0.5vh",
-        "padding":"0.5em",
-        "border": "1px dotted blue"
     }
+   
 }

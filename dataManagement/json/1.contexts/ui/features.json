@@ -5,9 +5,11 @@
         "nature" : "Foundation",
         "type" : "Path",
         "classe" : "Route",
-        "label" : "Bâtir",
         "description" : "Portail d'authentification vers le User Workplace",
-        "image" : "/src/assets/icons/atlas_icon.png",
+        "label" : "Bâtir",
+        "medias" : [
+            "odyssee_batirLogo"
+        ],
         "destination" : "/login"
     },
     {
@@ -17,7 +19,9 @@
         "classe" : "Route",
         "description" : "Portail d'accès vers les projets et users index",
         "label" : "Explorer",
-        "image" : "/src/assets/icons/exploration_icon.png",
+        "medias" : [
+            "odyssee_explorationLogo"
+        ],
         "destination" : "/projets"
     },
     {
@@ -27,8 +31,33 @@
         "classe" : "Route",
         "description" : "Portail d'accès vers un projet ou gallerie avec une clé",
         "label" : "Trouver un projet",
-        "image" : "/src/assets/icons/qr_code_icon.png",
+        "medias" : [
+            "qr_locationIcon"
+        ],
         "destination" : "/sharing"
+    },
+    {
+        "name" : "new-data",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "Afficher des options de nouveaux objets de categories selectionnées",
+        "label" : "Créer",
+        "medias" : [
+            "odyssee_creerLogo"
+        ]
+    },
+    {
+        "name" : "projets",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "Gérer les projets",
+        "label" : "Projets",
+        "medias" : [
+            
+        ]
+        
     },
     {
         "name" : "bibles",
@@ -37,18 +66,35 @@
         "classe" : "Component",
         "description" : "Créer une nouvelle bible",
         "label" : "Bibles",
-        "image" : "/src/assets/icons/monde_icon.png",
-        "destination" : "/username/bibles" 
-    },  
+        "medias" : [
+            "odyssee_bibleLogo"
+        ]
+        
+    },
     {
-        "name" : "new-data",
+        "name" : "planning",
         "nature" : "Foundation",
         "type" : "Feature",
         "classe" : "Component",
-        "description" : "Afficher des options de nouveaux objets de categories selectionnées",
-        "label" : "Créer",
-        "image" : "/src/assets/images/Feature/creer_icon.png"
+        "description" : "Gérer les tâches",
+        "label" : "Planning",
+        "medias" : [
+            
+        ]
+        
     },
+    {
+        "name" : "idea",
+        "nature" : "Foundation",
+        "type" : "Feature",
+        "classe" : "Component",
+        "description" : "Gérer les idées",
+        "label" : "Idées",
+        "medias" : [
+            
+        ]
+        
+    },  
     {
         "name" : "contacts",
         "nature" : "Foundation",
@@ -56,8 +102,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets" ,
         "label" : "Contacts",
-        "image" : "/src/assets/images/Feature/contacts_icon.png",
-        "destination" : "/username/contacts"       
+        "medias" : [
+            "odyssee_contactLogo"
+        ]     
     },
     {
         "name" : "mindmap",
@@ -66,8 +113,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Mind Map",
-        "image" : "/src/assets/icons/mindmap_icon.png",
-        "destination" : "/username/mindmap"         
+        "medias" : [
+            "odyssee_mindmapLogo"
+        ]          
     },
     {
         "name" : "gantt",
@@ -76,18 +124,21 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets" ,
         "label" : "Gantt",
-        "image" : "/src/assets/icons/gantt_icon.png",
-        "destination" : "/username/gantts"         
+        "medias" : [
+            "odyssee_ganttLogo"
+        ]         
     },
     {
-        "name" : "media",
+        "name" : "medias",
         "nature" : "Foundation",
         "type" : "Feature",
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Documents",
-        "image" : "/src/assets/images/Feature/documents_icon.png",
-        "destination" : "/username/medias"         
+        "medias" : [
+            "documentsLogo"
+        ]
+                
     },
     {
         "name" : "access",
@@ -96,8 +147,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Partages",
-        "image" : "/src/assets/images/Feature/acces_icon.png",
-        "destination" : "/username/access"        
+        "medias" : [
+            "odyssee_accessLogo"
+        ]        
     },
     {
         "name" : "settings",
@@ -106,8 +158,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Réglages",
-        "image" : "/src/assets/images/Feature/settings_icon.png",
-        "destination" : "/username/settings"          
+        "medias" : [
+            "odyssee_settingsLogo"
+        ]     
     },
     {
         "name" : "persos",
@@ -116,7 +169,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Personnages", 
-        "image" : "/src/assets/icons/hero_icon.png"        
+        "medias" : [
+            "odyssee_settingsLogo"
+        ]           
     },
     {
         "name" : "lieux",
@@ -125,7 +180,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Lieux", 
-        "image" : "/src/assets/icons/location_icon.png"
+        "medias" : [
+            "odyssee_environmentsLogo"
+        ]     
     },
     {
         "name" : "events",
@@ -134,7 +191,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Chronologie", 
-        "image" : "/src/assets/icons/story_icon.png"        
+        "medias" : [
+            "odyssee_eventsLogo"
+        ]          
     },
     {
         "name" : "items",
@@ -143,7 +202,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Items", 
-        "image" : "/src/assets/icons/item_icon.png"       
+        "medias" : [
+            "odyssee_itemsLogo"
+        ]            
     },
     {
         "name" : "quests",
@@ -152,7 +213,9 @@
         "classe" : "Component",
         "description" : "afficher des options de nouveaux objets" ,
         "label" : "Quetes", 
-        "image" : "/src/assets/icons/battle_icon.png"
+        "medias" : [
+            "odyssee_questsLogo"
+        ]     
                
     },
     {
@@ -162,7 +225,20 @@
         "type" : "Feature",
         "description" : "afficher des options de nouveaux objets",
         "label" : "Voyages", 
-        "image" : "/src/assets/icons/voyage_icon.png"       
+        "medias" : [
+            "odyssee_journeysLogo"
+        ]          
+    },
+    {
+        "name" : "stories",
+        "nature" : "Foundation",
+        "classe" : "Component",
+        "type" : "Feature",
+        "description" : "afficher des options de nouveaux objets",
+        "label" : "Histoires", 
+        "medias" : [
+            "odyssee_storiesLogo"
+        ]          
     }
 ]
 

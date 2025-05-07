@@ -5,7 +5,9 @@
         "type" : "Path",
         "classe" : "Route",
         "style" : "styleHomeRoute",
-        "selection" : ["homePage"]
+        "selection" : [
+            "homePage"
+        ]
     }   
     ,{
         "name" : "workplaceRoute", 

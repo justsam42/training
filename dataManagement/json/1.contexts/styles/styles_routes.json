@@ -9,7 +9,7 @@
         "gap" : "",
         "padding" : "0.5em"
     },
-"styleWorkplaceRoute" : {
+    "styleWorkplaceRoute" : {
         "gridArea": "content",
         "display" :"grid",
         "gridTemplateColumns" : "minmax(min-content, 10vw) 1fr minmax(min-content, 20vw)",

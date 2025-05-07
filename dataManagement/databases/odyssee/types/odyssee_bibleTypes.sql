@@ -2,63 +2,8 @@
 -- RAPPEL PSQL Synthax
 
 
------------------------- TYPES
 
--- liste des types liés aux structure info de mes apps 
-CREATE TYPE "app_names" AS ENUM('odyssee', 'undefined');
-
-
-CREATE TYPE "object_natures" AS ENUM('Foundation', 'Template', 'Interactif', 'Display','Other','Unknown', 'Undefined');
-CREATE TYPE "object_types" AS ENUM('Media', 'Feature','Style', 'Path', 'Trigger', 'Effect','Data', 'UI', 'Other','Undefined' 'Unknown');
-CREATE TYPE "object_classes" AS ENUM('Text', 'Action', 'Route', 'Page', 'View', 'Section','Component','Other', 'Unknown', 'Undefined');
-CREATE TYPE "objects_relationship" AS ENUM('Parent', 'Children','Other','Trigger', 'Target')
-
-
-CREATE TYPE "function_natures" AS ENUM('Interface-related', 'User-related', 'Features-related', 'Content-related', 'Other', 'Undefined' 'Unknown');
-CREATE TYPE "function_types" AS ENUM('SideEffect', 'Styling', 'Displaying', 'Transforming', 'Data mangagement','Preferences','Unknown', 'Undefined');
-CREATE TYPE "function_scopes" AS ENUM('Global', 'Local', 'Individual', 'Other','Unknown', 'Undefined');
-
-CREATE TYPE "requirement_natures" AS ENUM('Undefined' 'Unknown');
-CREATE TYPE "requirement_types" AS ENUM('Undefined' 'Unknown');
-
-
-
-
-
-
-
-
-
-
-
----------- liste des types liés aux features de l'APP
-
------ Projets
-
-CREATE TYPE "project_nature" AS ENUM('Scenario', 'Book', 'Paper', 'Other', 'Undefined');
-CREATE TYPE "project_type" AS ENUM('Graphic', 'Movie', 'Serial', 'Novel', 'Game', 'Science', 'Other', 'Undefined');
-CREATE TYPE "project_status" AS ENUM('Idea', 'Design', 'Developpment', 'Improvement', 'Approved','Suspended', 'Abordted', 'Pivoting','Undefined');
-
------ Task
-
-CREATE TYPE "task_nature" AS ENUM('Rendez-vous', 'To-do', 'Meeting', 'To Contact','Other', 'Undefined');
-CREATE TYPE "task_type" AS ENUM('Urgent', 'Important', 'Can wait', 'Standard');
-CREATE TYPE "task_status" AS ENUM('Coming', 'Current', 'Done', 'Undefined');
-
------  Medias
-
-CREATE TYPE "media_nature" AS ENUM('Document', 'Audio', 'Video', 'Image', 'Webpage','Other', 'Undefined');
---CREATE TYPE "media_type" AS ENUM('Urgent', 'Important', 'Can wait', 'Standard');
-
-
------ Ideas
-
-CREATE TYPE "idea_nature" AS ENUM('New project', 'Addition', 'Developpement', 'Other', 'Undefined');
-CREATE TYPE "idea_type" AS ENUM('Brilliant', 'Important', 'Can wait', 'Other', 'Random');
-CREATE TYPE "idea_status" AS ENUM('Raw', 'To grow', 'Filed');
-
-
------------------ Type des entités relatives aux Bibles
+------------------------------------------- Type des entités relatives aux Bibles
 
 --------- Environments
 

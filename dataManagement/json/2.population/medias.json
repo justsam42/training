@@ -1,0 +1,182 @@
+[
+    {
+        "name" : "qr_locationIcon",
+        "nature" : "Image",
+        "type" : "UI",
+        "classe" : "Global asset", 
+        "format" : "png",
+        "description" : "Logo provisoire pour les QR Codes", 
+        "source" : "/src/assets/icons/qr_code_icon.png"
+    },
+    {
+        "name" : "documentsLogo",
+        "nature" : "Image",
+        "format" : "png",
+        "type" : "UI",
+        "classe" : "Global asset", 
+        "description" : "Logo provisoire pour les MEDIAS de type documents", 
+        "source" : "/src/assets/images/Feature/documents_icon.png"
+    },{
+        "name" : "odysse_brandLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de l'app Odyssee", 
+        "source" : "/src/assets/icons/brand_icon.png"
+    },
+    {
+        "name" : "odyssee_explorationLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/exploration_icon.png"
+    },
+    {
+        "name" : "odyssee_batirLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'batir' de l'app Odyssee", 
+        "source" : "/src/assets/icons/atlas_icon.png"
+    },
+    {
+        "name" : "odyssee_bibleLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'bible' de l'app Odyssee", 
+        "source" : "/src/assets/icons/monde_icon.png"
+    },
+    {
+        "name" : "odyssee_creerLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'créer' de l'app Odyssee", 
+        "source" : "/src/assets/images/Feature/creer_icon.png"
+    },
+    {
+        "name" : "odyssee_contactsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'contacts' de l'app Odyssee", 
+        "source" : "/src/assets/images/Feature/contacts_icon.png"
+    },
+    {
+        "name" : "odyssee_mindmapLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'mind map' de l'app Odyssee", 
+        "source" : "/src/assets/icons/mindmap_icon.png"
+    },
+    {
+        "name" : "odyssee_ganttLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'gantt' de l'app Odyssee", 
+        "source" : "/src/assets/icons/gantt_icon.png"
+    },
+    {
+        "name" : "odyssee_accessLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'partager' de l'app Odyssee", 
+        "source" : "/src/assets/images/Feature/acces_icon.png"
+    },
+    {
+        "name" : "odyssee_settingsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'réglages' de l'app Odyssee", 
+        "source" : "/src/assets/images/Feature/settings_icon.png"
+    },
+
+
+    {
+        "name" : "odyssee_charactersLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/hero_icon.png" 
+    },
+    {
+        "name" : "odyssee_environmentsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/location_icon.png"
+    },
+    {
+        "name" : "odyssee_eventsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/story_icon.png" 
+    },
+    {
+        "name" : "odyssee_itemsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/item_icon.png"     
+    },
+    {
+        "name" : "odyssee_questsLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/battle_icon.png"
+    },
+    {
+        "name" : "odyssee_journeysLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : "/src/assets/icons/voyage_icon.png" 
+    },
+    {
+        "name" : "odyssee_storiesLogo",
+        "nature" : "Image",
+        "type" : "UI",
+        "format" : "png",
+        "classe" : "App asset", 
+        "description" : "Logo provisoire de la function 'explorer' de l'app Odyssee", 
+        "source" : ""  
+    },
+    {
+        "name" : "",
+        "nature" : "",
+        "format" : "",
+        "classe" : "", 
+        "description" : "", 
+        "source" : ""
+    }
+]

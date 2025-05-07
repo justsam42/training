@@ -6,8 +6,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil du site",
         "style" : "styleHome",
-        "titre" : null,
-        "image" : null,
+        "destination" : "",
         "selection" : [
             "brandView",
             "sharingView",
@@ -21,9 +20,8 @@
         "type" : "Path",
         "classe" : "Page",
         "description" : "Page d'accueil du Workplace",
-        "style" : "styleHomeWorkplace" ,
-        "titre" : null,
-        "image" : null,
+        "style" : "styleHomeWorkplace",
+        "destination" : "username",
         "selection" : [
             "defaultViewDashboard",
             "defaultViewProjets"
@@ -35,9 +33,8 @@
         "type" : "Path",
         "classe" : "Page",
         "description" : "Page d'accueil des Projets",
-        "style" : "styleHomeWorkplace" , 
-        "titre" : null,
-        "image" : null,
+        "style" : "styleHomeWorkplace",
+        "destination" : "username/projets",
         "selection" : [
             "defaultViewProjets"
         ] 
@@ -48,9 +45,8 @@
         "type" : "Path",
         "classe" : "Page",
         "description" : "Page d'accueil des Bibles",
-        "style" : "styleHomeWorkplace" ,
-        "titre" : null,
-        "image" : null, 
+        "style" : "styleHomeWorkplace",
+        "destination" : "/username/bibles",
         "selection" : [ 
             "defaultViewBible"
         ]
@@ -62,8 +58,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil du planning",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null,
+        "destination" : "/username/planning",
         "selection" : [ 
             "defaultViewPlanning",
             "dailyViewPlanning",
@@ -78,9 +73,8 @@
         "type" : "Path",
         "classe" : "Page",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null,
         "description" : "Page d'accueil des Idées",
+        "destination" : "/username/idees",
         "selection" : [
             "defaultViewIdeesStyle"
         ] 
@@ -92,8 +86,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Contacts",
         "style" : "styleHomeWorkplace" ,
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/contacts",
         "selection" : [ 
             "defaultViewContact"
         ]
@@ -105,8 +98,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Documents",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/medias" ,
         "selection" : [ 
             "defaultViewMedia"
         ]
@@ -118,8 +110,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Partages",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/access",
         "selection" : [ 
             "defaultViewAccess"
         ]
@@ -131,8 +122,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Gantts",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/gantts",
         "selection" : [ 
             "defaultViewGantt"
         ]
@@ -144,8 +134,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Mindmap",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/mindmap",
         "selection" : [ 
             "defaultViewMindmap"
         ]
@@ -157,8 +146,7 @@
         "classe" : "Page",
         "description" : "Page d'accueil des Settings",
         "style" : "styleHomeWorkplace",
-        "titre" : null,
-        "image" : null, 
+        "destination" : "/username/settings",
         "selection" : [ 
             "defaultViewSettings"
         ]
