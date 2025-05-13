@@ -20,9 +20,23 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')), 
-    path('my-username/projets/', include('projets.urls')),
-    path('my-username/bibles/', include('bible.urls')),
-    path('my-username/dashboard/', include('dashboard.urls')),
-    path('my-username/taches/', include('taches.urls')),
-    path('my-username/idees/', include('idees.urls'))
+    path('projets/', include('projets.urls')),
+    path('bibles/', include('bible.urls')),
+    path('dashboard/', include('dashboard.urls')),
+    path('taches/', include('taches.urls')),
+    path('idees/', include('idees.urls'))
 ]
+
+""" 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('core.urls')), 
+    path('<str:"username_id">/projets/', include('projets.urls')),
+    path('<str:"username_id">/bibles/', include('bible.urls')),
+    path('<str:"username_id">/dashboard/', include('dashboard.urls')),
+    path('<str:"username_id">/taches/', include('taches.urls')),
+    path('<str:"username_id">/idees/', include('idees.urls'))
+]
+
+
+ """

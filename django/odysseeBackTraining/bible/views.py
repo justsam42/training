@@ -9,6 +9,7 @@ from django.shortcuts import render
 
 
 # View qui correspond à la page d'accueil de la FEATURE ---BIBLE----
+# Front_name = 
 @api_view(["GET", "POST"])
 
 def indexBible(request, format=None):
@@ -21,6 +22,7 @@ def indexBible(request, format=None):
 
 
 # View qui correspond à la page d'accueil des - COLLECTIONS-  de la FEATURE ---BIBLE----
+# Front_name = defaultViewBible
 @api_view(["GET", "POST"])
 
 def indexCollection(request, format=None):
@@ -33,6 +35,7 @@ def indexCollection(request, format=None):
 
 
 # View qui correspond au FOCUS d'un objet d'une collection de la FEATURE ---BIBLE----
+# Front_name = 
 @api_view(["GET", "POST"])
 
 def focusObjet(request, format=None):
